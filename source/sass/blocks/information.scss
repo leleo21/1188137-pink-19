@@ -1,0 +1,30 @@
+.information__heart {
+  border: none;
+  background-color: transparent;
+  padding-right: 20px;
+}
+
+.information__like {
+  color: $pink;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: normal;
+  text-align: left;
+}
+
+.information__name {
+  color: $dark;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.information__name span {
+  font-weight: normal;
+}
+
+.information__text {
+  color: $dark;
+  padding-bottom: 20px;
+  font-size: 14px;
+  line-height: 24px;
+}

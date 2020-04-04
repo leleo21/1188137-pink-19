@@ -1,0 +1,41 @@
+.availability {
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-color: $black;
+  margin: 0;
+  padding: 32px 40px 35px 40px;
+}
+
+.availability__picture {
+  background-image: url("../../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+    height: 314px;
+  margin: 0 -40px;
+}
+
+.availability__title {
+  color: $white;
+  font-size: 24px;
+  font-weight: 300;
+  padding-bottom: 33px;
+}
+
+.availability__download {
+  color: $white;
+  text-decoration: none;
+  border: 3px solid $white;
+  border-radius: 10px;
+
+}
+
+.availability__list {
+  color: $white;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.availability__button {
+  margin-bottom: 32px;
+  text-align: center;
+}

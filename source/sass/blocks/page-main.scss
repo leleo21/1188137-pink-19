@@ -1,0 +1,16 @@
+.page-main {
+    color: $black;
+    margin: 0;
+}
+
+.page-main__title {
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-color: $black;
+  color: $white;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  padding: 36px 46px 51px 46px;
+  text-align: center;
+}

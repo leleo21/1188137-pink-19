@@ -1,0 +1,11 @@
+.apps a {
+  color: $white;
+}
+
+.apps {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 0;
+  margin-bottom: 29px;
+}
