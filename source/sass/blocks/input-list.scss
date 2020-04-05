@@ -1,0 +1,35 @@
+.input-list__text {
+  padding: 22px 22px 18px 20px;
+  border: 2px solid $lightgray;
+  font-size: 18px;
+  line-height: 30px;
+  color: $dark;
+
+}
+
+.input-list__label {
+  padding-left: 21px;
+}
+
+.input-list-contacts {
+  margin: 0;
+  border: none;
+}
+
+.input-list-contacts__label {
+  font-size: 14px;
+  line-height: 30px;
+  color: $pink;
+  padding-left: 21px;
+}
+
+.input-list-contacts__communication {
+  border: 2px solid $lightgray;
+  padding: 22px 22px 18px 22px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.input-list-contacts__item {
+  margin-bottom: 28px;
+}
