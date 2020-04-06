@@ -11,13 +11,13 @@
   background-color: $dark;
   border-radius: 50%;
   border: none;
+  margin: 0 20px 10px 0;
 }
 
 .price__toggles {
   display: flex;
-  justify-content: space-around;
-  padding-left: 132px;
-  padding-right: 132px;
+  justify-content: center;
+  padding: 45px 22px 10px 22px;
 }
 
 .price__rate {
@@ -53,8 +53,4 @@
   border-bottom: none;
   padding: 22px 18px 23px 22px;
   align-items: center;
-}
-
-.price__toggles {
-  padding: 45px 132px 10px 132px;
 }

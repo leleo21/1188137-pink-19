@@ -5,7 +5,6 @@
   margin-bottom: 25px;
 }
 
-
 .reviews__text {
   font-size: 14px;
   line-height: 30px;
@@ -15,14 +14,12 @@
 }
 
 .reviews {
-  padding: 25px 21px 11px 21px;
+  padding: 25px 22px 11px 22px;
 }
 
 .reviews__toggles {
   display: flex;
-  justify-content: space-around;
-  padding-left: 110px;
-  padding-right: 110px;
+  justify-content: center;
 }
 
 .reviews__slider {
@@ -32,6 +29,7 @@
   background-color: $dark;
   border-radius: 50%;
   border: none;
+  margin: 0 20px 10px 0;
 }
 
 .reviews__slider--dedicated {
