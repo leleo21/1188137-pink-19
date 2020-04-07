@@ -18,8 +18,6 @@
   font-size: 14px;
   line-height: 18px;
   text-align: center;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 .form__contacts {
@@ -37,10 +35,11 @@
   border: none;
   padding: 41px 22px 0 22px;
   margin: 0;
+  text-align: center;
 }
 
 .form__button {
-  width: 284px;
+  width: 275px;
   height: 59px;
   background-color: $green;
   color: $white;

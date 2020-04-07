@@ -1,3 +1,8 @@
+.social {
+  display: flex;
+  justify-content: center;
+}
+
 .social__link {
   display: flex;
   justify-content: center;
@@ -9,12 +14,8 @@
   border-radius: 50%;
 }
 
-.social {
-  display: flex;
-}
-
 .social__item {
-  margin-right: 4px;
-  margin-left: 4px;
+  margin-right: 8px;
+  margin-left: 8px;
   margin-bottom: 10px;
 }

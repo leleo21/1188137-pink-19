@@ -1,7 +1,6 @@
 .price {
   background-color: $gray;
-  padding-top: 127px;
-  padding-bottom: 41px;
+  padding-top: 97px;
 }
 
 .price__slider {
@@ -11,13 +10,14 @@
   background-color: $dark;
   border-radius: 50%;
   border: none;
-  margin: 0 20px 10px 0;
+  margin: 0px 10px 10px 10px;
 }
 
 .price__toggles {
   display: flex;
   justify-content: center;
-  padding: 45px 22px 10px 22px;
+  padding-top: 45px;
+  padding-bottom: 51px;
 }
 
 .price__rate {
@@ -29,7 +29,7 @@
   padding-bottom: 21px;
 }
 
-.price__rate span {
+.price__worth {
   font-size: 24px;
   font-weight: 300;
 }
