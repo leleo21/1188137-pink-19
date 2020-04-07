@@ -20,13 +20,14 @@
 }
 
 body {
-  width: 320px;
+  min-width: 320px;
   margin: 0;
   padding: 0;
   font-family: "OpenSans", "Arial", sans-serif;
 }
 
-input, textarea {
+input,
+textarea {
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
@@ -35,7 +36,7 @@ input, textarea {
 }
 
 ul {
-  list-style:none;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -44,11 +45,13 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0;
   text-align: center;
 }
 
 p {
-  margin:0;
+  margin: 0;
 }

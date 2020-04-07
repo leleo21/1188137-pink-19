@@ -1,4 +1,4 @@
-.loading__picture img {
+.loading__picture {
   display: block;
 }
 
@@ -7,16 +7,13 @@
   line-height: 30px;
   color: $dark;
   text-align: center;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
 }
 
 .loading__control {
   background-color: $gray;
-  padding: 20px 20px 42px 20px;
-}
-
-.loading__picture {
-  padding-bottom: 42px;
+  padding: 20px 20px 34px 20px;
+  border-bottom: 1px solid $dark;
 }
 
 .loading__toggle {
@@ -27,8 +24,9 @@
 .loading__slider {
   width: 240px;
   height: 2px;
-  background-color: $black;
-  margin-bottom: 10px;
+  background-color: $dark;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .loading__button {
@@ -41,5 +39,17 @@
   line-height: 18px;
   font-weight: bold;
   color: $dark;
+  padding: 0;
+}
 
+.loading__list {
+  background-color: $gray;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 22px;
+}
+
+.loading__action {
+  padding: 38px 20px 29px 20px;
+  background-color: $gray;
 }

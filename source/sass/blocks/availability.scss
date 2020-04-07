@@ -1,16 +1,7 @@
 .availability {
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
   background-color: $black;
   margin: 0;
-  padding: 32px 40px 35px 40px;
-}
-
-.availability__picture {
-  background-image: url("../../img/iphone-hand-mobile@1x.png");
-  background-repeat: no-repeat;
-    height: 314px;
-  margin: 0 -40px;
+  padding: 55px 22px 35px 22px;
 }
 
 .availability__title {
@@ -24,8 +15,11 @@
   color: $white;
   text-decoration: none;
   border: 3px solid $white;
-  border-radius: 10px;
-
+  border-radius: 35px;
+  padding: 20px 30px 20px 30px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
 }
 
 .availability__list {
@@ -33,6 +27,7 @@
   font-size: 14px;
   line-height: 24px;
   margin: 0;
+  text-align: center;
 }
 
 .availability__button {

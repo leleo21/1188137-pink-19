@@ -1,7 +1,6 @@
 .price {
   background-color: $gray;
-  padding-top: 127px;
-  padding-bottom: 41px;
+  padding-top: 97px;
 }
 
 .price__slider {
@@ -11,13 +10,14 @@
   background-color: $dark;
   border-radius: 50%;
   border: none;
+  margin: 0px 10px 10px 10px;
 }
 
 .price__toggles {
   display: flex;
-  justify-content: space-around;
-  padding-left: 132px;
-  padding-right: 132px;
+  justify-content: center;
+  padding-top: 45px;
+  padding-bottom: 51px;
 }
 
 .price__rate {
@@ -29,7 +29,7 @@
   padding-bottom: 21px;
 }
 
-.price__rate span {
+.price-worth {
   font-size: 24px;
   font-weight: 300;
 }
@@ -53,8 +53,4 @@
   border-bottom: none;
   padding: 22px 18px 23px 22px;
   align-items: center;
-}
-
-.price__toggles {
-  padding: 45px 132px 10px 132px;
 }

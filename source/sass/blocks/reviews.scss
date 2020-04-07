@@ -1,10 +1,13 @@
+.reviews {
+  padding: 25px 22px 11px 22px;
+}
+
 .reviews__name {
   font-size: 18px;
   line-height: 30px;
   color: $black;
   margin-bottom: 25px;
 }
-
 
 .reviews__text {
   font-size: 14px;
@@ -14,15 +17,9 @@
   margin-bottom: 42px;
 }
 
-.reviews {
-  padding: 25px 21px 11px 21px;
-}
-
 .reviews__toggles {
   display: flex;
-  justify-content: space-around;
-  padding-left: 110px;
-  padding-right: 110px;
+  justify-content: center;
 }
 
 .reviews__slider {
@@ -32,6 +29,7 @@
   background-color: $dark;
   border-radius: 50%;
   border: none;
+  margin: 0px 10px 10px 10px;
 }
 
 .reviews__slider--dedicated {

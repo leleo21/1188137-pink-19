@@ -4,12 +4,6 @@
   background-color: $gray;
 }
 
-.users-list__picture a {
-  padding: 0;
-  margin: 0;
-  display: block;
-}
-
 .users-list__checkbox {
   width: 140px;
   height: 31px;
@@ -29,10 +23,10 @@
   position: relative;
 }
 
-.users-list__picture img{
+.users-list__picture {
   display: block;
 }
 
-.users-list__picture--width img {
+.users-list__picture--width {
   margin: 0 -20px;
 }

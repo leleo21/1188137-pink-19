@@ -1,0 +1,13 @@
+.input-list-contacts {
+  margin: 0;
+  border: none;
+}
+
+.input-list-contacts__text {
+  padding: 22px 21px 18px 21px;
+  border: 2px solid $lightgray;
+  font-size: 18px;
+  line-height: 30px;
+  color: $dark;
+  width: 230px;
+}

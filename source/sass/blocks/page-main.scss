@@ -1,18 +1,25 @@
 .page-main {
-    color: $black;
-    margin: 0;
+  color: $black;
+  margin: 0;
 }
 
 .page-main__title {
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-color: $black;
   color: $white;
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
-  padding: 36px 46px 51px 46px;
+  padding: 36px 46px 0px 46px;
   text-align: center;
+}
+
+.page-main__picture {
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  height: 314px;
+  margin: 0 -46px;
 }
 
 .page-main__text {
