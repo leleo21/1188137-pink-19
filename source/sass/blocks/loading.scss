@@ -31,7 +31,6 @@
 
 .loading__button {
   width: 280px;
-  height: 55px;
   border: 3px solid $dark;
   border-radius: 35%;
   margin-bottom: 12px;
@@ -39,7 +38,7 @@
   line-height: 18px;
   font-weight: bold;
   color: $dark;
-  padding: 0;
+  padding: 20px 30px 20px 30px;
 }
 
 .loading__list {
