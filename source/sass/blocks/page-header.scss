@@ -1,0 +1,14 @@
+.page-header {
+  background-color: $black;
+}
+
+.page-header__cap {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 19px 25px 20px;
+}
+
+.page-header__toggle {
+  background-color: transparent;
+  border: none;
+}

@@ -1,0 +1,56 @@
+.price {
+  background-color: $gray;
+  padding-top: 97px;
+}
+
+.price__slider {
+  width: 6px;
+  height: 6px;
+  opacity: 0.3;
+  background-color: $dark;
+  border-radius: 50%;
+  border: none;
+  margin: 0px 10px 10px 10px;
+}
+
+.price__toggles {
+  display: flex;
+  justify-content: center;
+  padding-top: 45px;
+  padding-bottom: 51px;
+}
+
+.price__rate {
+  background-color: $dark;
+  color: $white;
+  font-size: 18px;
+  line-height: 30px;
+  padding-top: 23px;
+  padding-bottom: 21px;
+}
+
+.price-worth {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.price__item {
+  font-size: 14px;
+  font-weight: 30px;
+  color: $dark;
+  background-color: $white;
+  text-align: left;
+  font-weight: 300;
+  padding-left: 22px;
+  padding-right: 22px;
+  border-bottom: 1px solid $gray;
+}
+
+.price__row {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid $gray;
+  border-bottom: none;
+  padding: 22px 18px 23px 22px;
+  align-items: center;
+}

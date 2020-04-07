@@ -1,0 +1,40 @@
+.reviews {
+  padding: 25px 22px 11px 22px;
+}
+
+.reviews__name {
+  font-size: 18px;
+  line-height: 30px;
+  color: $black;
+  margin-bottom: 25px;
+}
+
+.reviews__text {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: $dark;
+  margin-bottom: 42px;
+}
+
+.reviews__toggles {
+  display: flex;
+  justify-content: center;
+}
+
+.reviews__slider {
+  width: 6px;
+  height: 6px;
+  opacity: 0.3;
+  background-color: $dark;
+  border-radius: 50%;
+  border: none;
+  margin: 0px 10px 10px 10px;
+}
+
+.reviews__slider--dedicated {
+  width: 6px;
+  height: 6px;
+  background-color: $white;
+  border: 3px solid $black;
+}

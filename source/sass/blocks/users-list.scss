@@ -1,0 +1,32 @@
+.users-list__info {
+  padding: 25px 13px 28px 17px;
+  margin-bottom: 20px;
+  background-color: $gray;
+}
+
+.users-list__checkbox {
+  width: 140px;
+  height: 31px;
+  background-color: $pink;
+  color: $white;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding-top: 5px;
+}
+
+.users-list__item {
+  position: relative;
+}
+
+.users-list__picture {
+  display: block;
+}
+
+.users-list__picture--width {
+  margin: 0 -20px;
+}

@@ -1,0 +1,55 @@
+.loading__picture {
+  display: block;
+}
+
+.loading__text-item {
+  font-size: 14px;
+  line-height: 30px;
+  color: $dark;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.loading__control {
+  background-color: $gray;
+  padding: 20px 20px 34px 20px;
+  border-bottom: 1px solid $dark;
+}
+
+.loading__toggle {
+  display: flex;
+  justify-content: space-around;
+}
+
+.loading__slider {
+  width: 240px;
+  height: 2px;
+  background-color: $dark;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.loading__button {
+  width: 280px;
+  height: 55px;
+  border: 3px solid $dark;
+  border-radius: 35%;
+  margin-bottom: 12px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  color: $dark;
+  padding: 0;
+}
+
+.loading__list {
+  background-color: $gray;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 22px;
+}
+
+.loading__action {
+  padding: 38px 20px 29px 20px;
+  background-color: $gray;
+}

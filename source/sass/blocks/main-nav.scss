@@ -1,0 +1,13 @@
+.main-nav__link {
+  color: $white;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.main-nav__item {
+  padding: 26px 88px 26px 89px;
+  border: 1px solid $dark;
+  border-bottom: none;
+  text-align: center;
+}
