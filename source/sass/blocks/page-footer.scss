@@ -1,5 +1,10 @@
 .page-footer__advertising {
-  padding: 40px 22px 40px 22px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.page-footer__advertising--index {
+  display: none;
 }
 
 .page-footer__link {
@@ -23,4 +28,20 @@
   text-align: left;
   color: $dark;
   margin-right: 15px;
+  padding-top: 5px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__advertising {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-footer__advertising--index {
+    display: flex;
+  }
 }

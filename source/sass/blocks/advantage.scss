@@ -3,9 +3,26 @@
 }
 
 .advantage__list {
-  padding: 90px 22px 5px 22px;
+  padding-top: 60px;
 }
 
 .advantage__picture {
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .advantage_wrapper {
+    display: flex;
+  }
+
+  .advantage__picture {
+    order: -1;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantage__picture {
+    display: none;
+  }
 }

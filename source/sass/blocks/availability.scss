@@ -1,17 +1,15 @@
 .availability {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: $black;
-  margin: 0;
-  padding: 55px 22px 35px 22px;
-}
-
-.availability__title {
   color: $white;
-  font-size: 24px;
-  font-weight: 300;
-  padding-bottom: 33px;
+  padding-top: 36px;
+  margin: 0;
 }
 
 .availability__download {
+  display: inline-block;
   color: $white;
   text-decoration: none;
   border: 3px solid $white;
@@ -20,6 +18,7 @@
   font-size: 18px;
   line-height: 18px;
   font-weight: bold;
+  display: inline-block;
 }
 
 .availability__list {
@@ -28,9 +27,91 @@
   line-height: 24px;
   margin: 0;
   text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .availability__button {
-  margin-bottom: 32px;
+  margin-bottom: 40px;
   text-align: center;
+}
+
+.availability__picture {
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  height: 286px;
+  margin: 0 -20px;
+}
+
+.availability__text {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  margin-bottom: 33px;
+  text-align: center;
+}
+
+.availability__main {
+  background-color: $black;
+  padding-top: 28px;
+  padding-bottom: 35px;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .availability {
+    padding-top: 103px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    margin-bottom: 0;
+  }
+
+  .availability__text {
+    font-size: 40px;
+    line-height: 46px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 340px;
+  }
+
+  .availability__picture {
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    height: 545px;
+    margin: -200px -50px;
+  }
+
+  .availability__download {
+    padding: 20px 37px 20px 37px;
+  }
+
+  .availability__main {
+    background-color: transparent;
+    padding-right: 320px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .availability {
+    padding-top: 99px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+
+  .availability__text {
+    font-size: 50px;
+    line-height: 56px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 640px;
+  }
+
+  .availability__picture {
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    height: 645px;
+    margin: -220px 0px;
+  }
+
+  .availability__main {
+    padding-right: 640px;
+  }
 }

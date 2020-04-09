@@ -5,9 +5,34 @@
   line-height: 32px;
 }
 
+.main-nav__item:first-child {
+  border-top: 1px solid $dark;
+}
+
 .main-nav__item {
-  padding: 26px 88px 26px 89px;
-  border: 1px solid $dark;
-  border-bottom: none;
+  padding: 26px 20px 26px 20px;
+  border-bottom: 1px solid $dark;
   text-align: center;
+}
+
+.main-nav__list {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+
+@media (min-width: $desktop-width) {
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .main-nav__item {
+    border: none;
+  }
+
+  .main-nav__item:first-child {
+    border-top: none;
+  }
 }

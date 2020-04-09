@@ -15,18 +15,44 @@
   font-weight: bold;
   position: absolute;
   top: 0px;
-  right: 0px;
+  right: 20px;
   padding-top: 5px;
 }
 
 .users-list__item {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: calc((99.9% - 10px * 4) / 2);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc((99.9% - 10px * 6) / 3);
+  }
 }
 
 .users-list__picture {
   display: block;
+  width: 100%;
 }
 
 .users-list__picture--width {
-  margin: 0 -20px;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .users-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $tablet-width) {
+   .users-list__item--width {
+     width: 100%;
+     margin: 0;
+   }
 }

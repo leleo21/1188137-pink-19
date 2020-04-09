@@ -6,26 +6,31 @@
 .page-main__title {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   background-color: $black;
+
+}
+
+.page-main__tagline {
   color: $white;
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
-  padding: 36px 46px 0px 46px;
+  padding-top: 36px;
   text-align: center;
+  padding-bottom: 35px;
 }
 
-.page-main__picture {
-  background-image: url("../img/iphone-hand-mobile@1x.png");
-  background-repeat: no-repeat;
-  height: 314px;
-  margin: 0 -46px;
-}
+@media (min-width: $tablet-width) {
+  .page-main__title {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+ }
 
-.page-main__text {
-  font-size: 14px;
-  line-height: 30px;
-  text-align: center;
-  color: $dark;
-  padding: 54px 23px 49px 23px;
+ .page-main__tagline {
+   color: $white;
+   font-size: 50px;
+   line-height: 60px;
+   padding-top: 83px;
+   padding-bottom: 79px;
+ }
 }

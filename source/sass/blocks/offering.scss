@@ -6,9 +6,39 @@
 }
 
 .offering__motto {
-  padding: 46px 22px 29px 22px;
+  padding-top: 46px;
+  padding-bottom: 29px;
 }
 
 .offering__question {
   margin-bottom: 30px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .offering {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .offering__answer {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .offering__question {
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .offering {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .offering__answer {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }

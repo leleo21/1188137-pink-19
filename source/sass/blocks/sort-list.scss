@@ -12,6 +12,27 @@
   margin: 0;
 }
 
+.sort-list__picture {
+  display: none;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+  }
+}
+
 .sort-list__item {
   margin-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 65px;
+    margin-left: 65px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .sort-list {
+    display: flex;
+  }
 }
