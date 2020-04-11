@@ -9,6 +9,13 @@
   background-size: cover;
   background-color: $black;
 
+  @include media-width($tablet-width) {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+
+  @include media-width($desktop-width) {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
 }
 
 .page-main__tagline {
@@ -19,18 +26,12 @@
   padding-top: 36px;
   text-align: center;
   padding-bottom: 35px;
-}
 
-@media (min-width: $tablet-width) {
-  .page-main__title {
-    background-image: url("../img/bg-back-tablet@1x.jpg");
- }
-
- .page-main__tagline {
-   color: $white;
-   font-size: 50px;
-   line-height: 60px;
-   padding-top: 83px;
-   padding-bottom: 79px;
- }
+  @include media-width($tablet-width) {
+    color: $white;
+    font-size: 50px;
+    line-height: 60px;
+    padding-top: 83px;
+    padding-bottom: 79px;
+  }
 }

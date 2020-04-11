@@ -9,11 +9,8 @@
   font-size: 14px;
   line-height: 30px;
   color: $dark;
-}
 
-
-@media (min-width: $tablet-width) {
-  .users__text-item {
+  @include media-width($tablet-width) {
     font-size: 18px;
   }
 }

@@ -1,10 +1,19 @@
 .page-footer__advertising {
   padding-top: 40px;
   padding-bottom: 40px;
+
+  @include media-width($tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .page-footer__advertising--index {
   display: none;
+
+  @include media-width($tablet-width) {
+    display: flex;
+  }
 }
 
 .page-footer__link {
@@ -30,18 +39,15 @@
   margin-right: 15px;
   padding-top: 5px;
 
-  @media (min-width: $desktop-width) {
+  @include media-width($desktop-width) {
     font-size: 18px;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .page-footer__advertising {
-    display: flex;
-    justify-content: space-between;
-  }
+.page-footer__logo-image {
+  display: inline-block;
+}
 
-  .page-footer__advertising--index {
-    display: flex;
-  }
+.page-footer__image-map {
+  width: 100%;
 }

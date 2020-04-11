@@ -8,21 +8,20 @@
 
 .advantage__picture {
   text-align: center;
-}
 
-@media (min-width: $tablet-width) {
-  .advantage_wrapper {
-    display: flex;
-  }
-
-  .advantage__picture {
+  @include media-width($tablet-width) {
     order: -1;
     padding-right: 20px;
   }
+
+  @include media-width($desktop-width) {
+    display: none;
+  }
 }
 
-@media (min-width: $desktop-width) {
-  .advantage__picture {
-    display: none;
+.advantage_wrapper {
+
+  @include media-width($tablet-width) {
+    display: flex;
   }
 }
