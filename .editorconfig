@@ -21,7 +21,7 @@ trim_trailing_whitespace = true
 [*.md]
 trim_trailing_whitespace = false
 
-[*normalize.scss]
+[*normalize]
 charset = none
 end_of_line = none
 indent_style = none
