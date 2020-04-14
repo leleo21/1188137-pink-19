@@ -24,12 +24,11 @@
   margin-bottom: 30px;
 
   @include media-width($tablet-width) {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 
 .offering__answer {
-
   @include media-width($tablet-width) {
     padding-left: 30px;
     padding-right: 30px;

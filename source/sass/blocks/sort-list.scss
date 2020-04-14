@@ -31,7 +31,6 @@
 }
 
 .sort-list {
-
   @include media-width($desktop-width) {
     display: flex;
   }

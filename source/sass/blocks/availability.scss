@@ -65,7 +65,7 @@
   @include media-width($desktop-width) {
     background-image: url("../img/iphone-hand-desktop@1x.png");
     height: 645px;
-    margin: -220px 0px;
+    margin: -220px 0;
   }
 }
 

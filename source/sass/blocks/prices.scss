@@ -58,7 +58,6 @@
   padding-top: 45px;
   margin-bottom: 45px;
   background-color: $gray;
-
 }
 
 .prices__option {
@@ -95,7 +94,7 @@
   background-color: $dark;
   border-radius: 50%;
   border: none;
-  margin: 0px 10px 10px 10px;
+  margin: 0 10px 10px 10px;
 
   @include media-width($desktop-width) {
     display: none;
@@ -117,17 +116,13 @@
   @include media-width($tablet-width) {
     display: table-cell;
   }
-}
-
-.prices__heading--showmobile {
-  display: none;
 
   @include media-width($tablet-width) {
     display: table-cell;
   }
 }
 
-.prices__choice--showmobile {
+.prices__heading--showmobile {
   display: none;
 
   @include media-width($tablet-width) {

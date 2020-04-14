@@ -9,7 +9,7 @@
   resize: vertical;
 
   @include media-width($desktop-width) {
-  min-width: 816px;
-  min-height: 127px;
+    min-width: 816px;
+    min-height: 127px;
   }
 }

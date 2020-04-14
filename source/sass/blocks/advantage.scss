@@ -19,8 +19,7 @@
   }
 }
 
-.advantage_wrapper {
-
+.advantage_wrapper {  
   @include media-width($tablet-width) {
     display: flex;
   }

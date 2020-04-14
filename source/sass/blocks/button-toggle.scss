@@ -19,7 +19,6 @@
 }
 
 .button-toggle__wrapper {
-
   @include media-width($tablet-width) {
     border-bottom: 1px solid $dark;
   }

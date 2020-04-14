@@ -43,7 +43,7 @@
   background-color: $dark;
   border-radius: 50%;
   border: none;
-  margin: 0px 10px 10px 10px;
+  margin: 0 10px 10px 10px;
 
   @include media-width($desktop-width) {
     display: none;
@@ -51,7 +51,6 @@
 }
 
 .reviews__list {
-
   @include media-width($tablet-width) {
     display: flex;
     flex-wrap: wrap;

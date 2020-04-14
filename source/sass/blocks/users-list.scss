@@ -1,5 +1,4 @@
 .users-list {
-
   @include media-width($tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -22,7 +21,7 @@
   text-align: center;
   font-weight: bold;
   position: absolute;
-  top: 0px;
+  top: 0;
   right: 20px;
   padding-top: 5px;
 }
@@ -51,7 +50,6 @@
 }
 
 .users-list__item--width {
-
   @include media-width($tablet-width) {
     width: 100%;
     margin: 0;
