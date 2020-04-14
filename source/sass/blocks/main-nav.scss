@@ -26,8 +26,8 @@
     border: none;
   }
 }
-/*
-.main-nav__item a[href] {
+
+.main-nav__link {
   &:hover {
     color: $pink;
   }
@@ -36,7 +36,7 @@
     color: $pink;
   }
 }
- */
+
 .main-nav__list {
   margin-left: -20px;
   margin-right: -20px;
