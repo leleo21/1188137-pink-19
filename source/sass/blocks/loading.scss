@@ -8,11 +8,9 @@
   font-size: 14px;
   line-height: 30px;
   color: $dark;
-  text-align: center;
-  padding-bottom: 48px;
+  text-align: center;  
   background-color: $white;
-  margin-left: -600px;
-  margin-right: -600px;
+  padding-bottom: 48px;
 
   @include media-width($tablet-width) {
     font-size: 18px;
@@ -62,7 +60,6 @@
   font-size: 18px;
   line-height: 18px;
   font-weight: bold;
-  color: $dark;
   min-width: 280px;
   margin-left: auto;
   margin-right: auto;
@@ -130,5 +127,30 @@
     margin: 0;
     margin-right: 44px;
     margin-left: 104px;
+  }
+
+  &:hover {
+    background-color: $pink;
+    color: $white;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.loading__button--cancel {
+  border-color: rgba(40, 54, 69, 0.1);
+  color: rgba(40, 54, 69, 0.1);
+
+  &:hover {
+    border-color: rgba(40, 54, 69, 0.3);
+    color: rgba(40, 54, 69, 0.3);
+  }
+
+  &:active {
+    background-color: rgba(40, 54, 69, 0.3);
+    color: rgba(255, 255, 255, 0.3);
+    border-color: rgba(40, 54, 69, 0.3);
   }
 }

@@ -11,6 +11,16 @@
   }
 }
 
+.form input {
+  &:hover {
+    border-color: $dark;
+  }
+
+  &:active {
+    border-color: $pink;
+  }
+}
+
 .form__main-item {
   color: $pink;
   font-size: 14px;
@@ -123,6 +133,19 @@
 
   @include media-width($tablet-width) {
     margin-bottom: 0;
+  }
+
+  &:hover {
+    background-color: $heavygreen;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    color: $white;
+    background-color: $lightgray;
   }
 }
 

@@ -51,3 +51,13 @@
 .page-footer__image-map {
   width: 100%;
 }
+
+.page-footer__html-academy {
+  &:hover {
+    color: red;
+  }
+
+  &:active {
+    border-color: rgba(40, 54, 69, 0.3);
+  }
+}

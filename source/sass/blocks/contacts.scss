@@ -37,6 +37,16 @@
   font-size: 24px;
   text-align: center;
   color: $pink;
+
+  &:hover {
+    color: $black;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: rgba(40, 54, 69, 0.3);
+    text-decoration: none;
+  }
 }
 
 .contacts__item {

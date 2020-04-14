@@ -33,6 +33,15 @@
   @media (min-width: $tablet-width) {
     padding: 20px 37px 20px 37px;
   }
+
+  &:hover {
+    background-color: $white;
+    color: $pink;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
 }
 
 .availability__list {

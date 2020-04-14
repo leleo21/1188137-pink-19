@@ -6,14 +6,20 @@
 
   @include media-width($desktop-width) {
     font-weight: normal;
+
+    &:focus {
+      color: $white;
+      text-decoration: underline;
+    }
   }
 
   &:hover {
     color: $pink;
-  }
+  }  
 
   &:active {
-    color: $pink;
+    color: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
   }
 }
 
