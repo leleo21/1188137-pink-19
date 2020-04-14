@@ -7,6 +7,14 @@
   @include media-width($desktop-width) {
     font-weight: normal;
   }
+
+  &:hover {
+    color: $pink;
+  }
+
+  &:active {
+    color: $pink;
+  }
 }
 
 .main-nav__item:first-child {
@@ -24,16 +32,6 @@
 
   @include media-width($desktop-width) {
     border: none;
-  }
-}
-
-.main-nav__link {
-  &:hover {
-    color: $pink;
-  }
-
-  &:active {
-    color: $pink;
   }
 }
 
