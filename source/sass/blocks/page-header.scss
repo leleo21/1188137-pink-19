@@ -102,7 +102,7 @@
   }
 }
 
-@media (max-width:$until-desktop-width) {
+@media (max-width: $until-desktop-width) {
   .main-nav--closed .main-nav__item {
     display: none;
 
@@ -112,12 +112,11 @@
   }
 }
 
-@media (max-width:$until-desktop-width) {
+@media (max-width: $until-desktop-width) {
   .main-nav--opened .main-nav__wrapper {
     top: 73px;
     right: 0;
     left: 0;
-    right: 0;
     z-index: 10;
     background-color: $black;
   }
@@ -152,7 +151,6 @@
 
 
 .page-header__wrapper {
-
   @include media-width($desktop-width) {
     display: flex;
     justify-content: space-between;
