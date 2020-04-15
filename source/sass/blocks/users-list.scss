@@ -34,7 +34,7 @@
 .users-list__item {
   @include media-width($tablet-width) {
     width: calc((99.9% - 10px * 4) / 2);
-    margin-bottom: 20px;    
+    margin-bottom: 20px;
   }
 
   @include media-width($desktop-width) {
