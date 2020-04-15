@@ -41,6 +41,12 @@
   }
 }
 
+.main-nav__item:last-child {
+  @include media-width($desktop-width) {
+    padding-right: 0;
+  }
+}
+
 .main-nav__list {
   margin-left: -20px;
   margin-right: -20px;
