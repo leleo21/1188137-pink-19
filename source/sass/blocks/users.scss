@@ -1,13 +1,16 @@
 .users {
-  padding-left: 20px;
-  padding-right: 20px;
   padding-bottom: 49px;
 }
 
 .users__text-item {
-  padding: 56px 38px 56px 38px;
+  padding-top: 56px;
+  padding-bottom: 56px;
   text-align: center;
   font-size: 14px;
   line-height: 30px;
   color: $dark;
+
+  @include media-width($tablet-width) {
+    font-size: 18px;
+  }
 }

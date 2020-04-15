@@ -9,9 +9,16 @@
   align-items: center;
   width: 46px;
   height: 46px;
-  border: solid 3px $dark;
-  border: solid 3px rgba(0, 0, 0, 0.1);
+  border: solid 3px rgba(40, 54, 69, 0.1);
   border-radius: 50%;
+
+  &:hover {
+    border-color: $dark;
+  }
+
+  &:active {
+    border-color: rgba(40, 54, 69, 0.3);
+  }
 }
 
 .social__item {

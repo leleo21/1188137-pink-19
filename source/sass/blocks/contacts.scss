@@ -1,6 +1,6 @@
 .contacts {
   background-color: $white;
-  padding: 50px 22px 20px 22px;
+  padding-top: 50px;
 }
 
 .contacts__questions {
@@ -8,25 +8,73 @@
   line-height: 30px;
   font-weight: 300;
   color: $dark;
-  margin-bottom: 47px;
+  margin-bottom: 40px;
+
+  @include media-width($tablet-width) {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 57px;
+  }
+
+  @include media-width($desktop-width) {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 70px;
+  }
 }
 
 .contacts__title {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 11px;
+
+  @include media-width($desktop-width) {
+    margin-bottom: 29px;
+  }
 }
 
 .contacts__relations {
   font-size: 24px;
   text-align: center;
   color: $pink;
+
+  &:hover {
+    color: $black;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: rgba(40, 54, 69, 0.3);
+    text-decoration: none;
+  }
 }
 
 .contacts__item {
   margin-bottom: 28px;
+
+  @include media-width($tablet-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .contacts__list {
   text-align: center;
+
+  @include media-width($tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.contacts__item:nth-child(2n) {
+  @include media-width($desktop-width) {
+    order: 1;
+  }
+}
+
+.contacts__item:last-child {
+  @include media-width($desktop-width) {
+    order: 0;
+  }
 }

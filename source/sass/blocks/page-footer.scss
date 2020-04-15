@@ -1,5 +1,19 @@
 .page-footer__advertising {
-  padding: 40px 22px 40px 22px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @include media-width($tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__advertising--index {
+  display: none;
+
+  @include media-width($tablet-width) {
+    display: flex;
+  }
 }
 
 .page-footer__link {
@@ -23,4 +37,27 @@
   text-align: left;
   color: $dark;
   margin-right: 15px;
+  padding-top: 5px;
+
+  @include media-width($desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.page-footer__logo-image {
+  display: inline-block;
+}
+
+.page-footer__image-map {
+  width: 100%;
+}
+
+.page-footer__html-academy {
+  &:hover {
+    color: red;
+  }
+
+  &:active {
+    border-color: rgba(40, 54, 69, 0.3);
+  }
 }

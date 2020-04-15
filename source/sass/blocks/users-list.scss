@@ -1,3 +1,10 @@
+.users-list {
+  @include media-width($tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .users-list__info {
   padding: 25px 13px 28px 17px;
   margin-bottom: 20px;
@@ -14,19 +21,37 @@
   text-align: center;
   font-weight: bold;
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 0;
+  right: 20px;
   padding-top: 5px;
 }
 
 .users-list__item {
   position: relative;
+
+  @include media-width($tablet-width) {
+    width: calc((99.9% - 10px * 4) / 2);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+
+  @include media-width($desktop-width) {
+    width: calc((99.9% - 10px * 6) / 3);
+  }
 }
 
 .users-list__picture {
-  display: block;
+  width: 100%;
 }
 
 .users-list__picture--width {
-  margin: 0 -20px;
+  width: 100%;
+}
+
+.users-list__item--width {
+  @include media-width($tablet-width) {
+    width: 100%;
+    margin: 0;
+  }
 }

@@ -3,9 +3,24 @@
 }
 
 .advantage__list {
-  padding: 90px 22px 5px 22px;
+  padding-top: 60px;
 }
 
 .advantage__picture {
   text-align: center;
+
+  @include media-width($tablet-width) {
+    order: -1;
+    padding-right: 20px;
+  }
+
+  @include media-width($desktop-width) {
+    display: none;
+  }
+}
+
+.advantage__wrapper {
+  @include media-width($tablet-width) {
+    display: flex;
+  }
 }

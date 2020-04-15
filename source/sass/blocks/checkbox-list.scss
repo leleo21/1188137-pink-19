@@ -1,5 +1,11 @@
 .checkbox-list {
   margin: 0;
+  padding: 0;
+
+  @include media-width($desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .checkbox-list__label {
@@ -10,8 +16,16 @@
 
 .checkbox-list__input {
   margin-right: 33px;
+
+  @include media-width($desktop-width) {
+    margin-right: 23px;
+  }
 }
 
 .checkbox-list__item {
   margin-bottom: 47px;
+
+  @include media-width($desktop-width) {
+    width: calc(99.9% / 3);
+  }
 }

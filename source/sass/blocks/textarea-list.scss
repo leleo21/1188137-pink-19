@@ -1,7 +1,15 @@
 .textarea-list__text {
-  width: 222px;
+  font-size: 18px;
+  line-height: 30px;
   min-height: 197px;
-  border: 2px solid $lightgray;
+  border: 2px solid $gray;
   margin-bottom: 52px;
   padding: 23px 25px 23px 25px;
+  width: 100%;
+  resize: vertical;
+
+  @include media-width($desktop-width) {
+    min-width: 816px;
+    min-height: 127px;
+  }
 }
