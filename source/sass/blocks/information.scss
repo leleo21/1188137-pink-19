@@ -51,7 +51,7 @@
 
 .information__stats--main {
   width: 130px;
-  
+
   @include media-width($tablet-width) {
     order: -1;
   }
