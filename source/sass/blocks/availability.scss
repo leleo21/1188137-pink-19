@@ -6,7 +6,7 @@
   color: $white;
   padding-top: 36px;
   margin: 0;
-  top: 100px;
+  background-position: top -113px center;
 
   @include media-width($tablet-width) {
     padding-top: 103px;
