@@ -2,6 +2,7 @@
   @include media-width($tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -24,15 +25,15 @@
   top: 0;
   right: 20px;
   padding-top: 5px;
+
+  @include media-width($tablet-width) {
+    top: 50px;
+  }
 }
 
 .users-list__item {
-  position: relative;
-
   @include media-width($tablet-width) {
     width: calc((99.9% - 10px * 4) / 2);
-    margin-left: 10px;
-    margin-right: 10px;
     margin-bottom: 20px;
   }
 
@@ -45,13 +46,17 @@
   width: 100%;
 }
 
-.users-list__picture--width {
-  width: 100%;
+.users-list__image--main {
+  margin-right: -20px;
+  margin-left: -20px;
+
+  @include media-width($desktop-width) {
+    margin-right: -130px;
+    margin-left: -130px;
+  }
 }
 
-.users-list__item--width {
-  @include media-width($tablet-width) {
-    width: 100%;
-    margin: 0;
-  }
+.users-list__item--main {
+  width: 100%;
+  position: relative;
 }
