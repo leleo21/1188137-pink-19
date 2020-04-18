@@ -8,6 +8,7 @@
 
 .advantage__picture {
   text-align: center;
+  overflow: hidden;
 
   @include media-width($tablet-width) {
     order: -1;
@@ -17,6 +18,12 @@
   @include media-width($desktop-width) {
     display: none;
   }
+}
+
+.advantage__image {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -35px;
 }
 
 .advantage__wrapper {

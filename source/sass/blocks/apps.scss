@@ -4,6 +4,10 @@
   align-items: flex-end;
   padding: 0;
   margin-bottom: 29px;
+
+  @include media-width($tablet-width) {
+    margin-bottom: 41px;
+  }
 }
 
 .apps__item-link {
