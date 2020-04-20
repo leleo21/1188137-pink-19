@@ -1,0 +1,26 @@
+.header {
+  background-color: $black;
+}
+
+.header__wrapper {
+  @include media-width($desktop-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.header__top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 21px;
+  padding-bottom: 24px;
+
+  @include media-width($tablet-width) {
+    padding-top: 26px;
+    padding-bottom: 43px;
+    align-items: flex-end;
+  }
+}

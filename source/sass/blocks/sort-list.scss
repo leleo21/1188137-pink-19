@@ -2,12 +2,13 @@
   color: $black;
   font-size: 18px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 
 .sort-list__text {
   color: $dark;
   font-size: 14px;
+  line-height: 24px;
   text-align: center;
   margin: 0;
 }
@@ -22,7 +23,7 @@
 }
 
 .sort-list__item {
-  margin-bottom: 40px;
+  margin-bottom: 33px;
 
   @include media-width($desktop-width) {
     margin-right: 65px;

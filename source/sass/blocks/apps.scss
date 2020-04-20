@@ -3,10 +3,18 @@
   justify-content: space-around;
   align-items: flex-end;
   padding: 0;
-  margin-bottom: 29px;
+  margin-bottom: 19px;
+  padding-right: 38px;
+  padding-left: 38px;
 
   @include media-width($tablet-width) {
-    margin-bottom: 41px;
+    margin-bottom: 35px;
+    padding-right: 80px;
+    padding-left: 29px;
+  }
+
+  @include media-width($desktop-width) {
+    margin-bottom: 54px;
   }
 }
 

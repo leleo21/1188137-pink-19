@@ -1,5 +1,5 @@
 .reviews {
-  padding-top: 25px;
+  padding-top: 42px;
   padding-bottom: 30px;
 }
 
@@ -7,7 +7,7 @@
   font-size: 18px;
   line-height: 30px;
   color: $black;
-  margin-bottom: 25px;
+  margin-bottom: 13px;
 
   @include media-width($tablet-width) {
     margin-bottom: 5px;
@@ -92,7 +92,7 @@
 }
 
 .reviews__history {
-  margin-bottom: 42px;
+  margin-bottom: 36px;
 
   @include media-width($desktop-width) {
     display: flex;
