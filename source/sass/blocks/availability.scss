@@ -4,23 +4,17 @@
   background-size: cover;
   background-color: $black;
   color: $white;
-
   margin: 0;
   background-position: top -113px center;
 
   @include media-width($tablet-width) {
-
     background-image: url("../img/bg-back-tablet@1x.jpg");
     margin-bottom: 0;
     background-position: top center;
-
-
   }
 
   @include media-width($desktop-width) {
-
     background-image: url("../img/bg-back-desktop@1x.jpg");
-
   }
 }
 
