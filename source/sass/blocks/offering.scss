@@ -20,11 +20,11 @@
   padding-bottom: 36px;
 
   @include media-width($tablet-width) {
-    padding-top: 47px;
-    padding-bottom: 47px;
+    padding-top: 48px;
+    padding-bottom: 43px;
   }
 
-  @include media-width($tablet-width) {
+  @include media-width($desktop-width) {
     padding-top: 70px;
     padding-bottom: 76px;
   }

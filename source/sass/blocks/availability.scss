@@ -4,24 +4,23 @@
   background-size: cover;
   background-color: $black;
   color: $white;
-  padding-top: 22px;
+
   margin: 0;
   background-position: top -113px center;
 
   @include media-width($tablet-width) {
-    padding-top: 94px;
+
     background-image: url("../img/bg-back-tablet@1x.jpg");
     margin-bottom: 0;
     background-position: top center;
-    position: relative;
-    z-index: 1;
-    padding-bottom: 80px;
+
+
   }
 
   @include media-width($desktop-width) {
-    padding-top: 109px;
+
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    padding-bottom: 92px;
+
   }
 }
 
@@ -97,7 +96,7 @@
     position: absolute;
     margin: 0;
     bottom: 0;
-    left: -19px;
+    left: -39px;
     z-index: -1;
     right: 0;
   }
@@ -106,6 +105,8 @@
     background-image: url("../img/iphone-hand-desktop@1x.png");
     height: 645px;
     left: 146px;
+    bottom: 0;
+    left: 17px;
   }
 }
 
@@ -145,5 +146,23 @@
     margin: 0;
     padding-top: 0;
     max-width: 350px;
+  }
+}
+
+.availability__wrapper {
+  padding-top: 22px;
+
+  @include media-width($tablet-width) {
+    position: relative;
+    z-index: 1;
+    margin-right: -20px;
+    padding-top: 94px;
+    padding-bottom: 80px;
+  }
+
+  @include media-width($desktop-width) {
+    padding-bottom: 92px;
+    padding-top: 109px;
+    margin-right: 0;
   }
 }

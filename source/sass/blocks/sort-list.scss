@@ -1,16 +1,18 @@
 .sort-list {
+  padding-bottom: 5px;
+
   @include media-width($desktop-width) {
     display: flex;
     flex-wrap: wrap;
   }
 
   &__item {
-    margin-bottom: 33px;
+    margin-bottom: 29px;
     text-align: center;
 
     @include media-width($tablet-width) {
-      margin-bottom: 36px;
       text-align: left;
+      margin-bottom: 34px;
     }
 
     @include media-width($desktop-width) {
@@ -37,7 +39,13 @@
   &__title {
     color: $black;
     font-size: 18px;
+    line-height: 24px;
     margin-bottom: 14px;
+
+    @include media-width($tablet-width) {
+      text-align: left;
+      margin-bottom: 13px;
+    }
 
     @include media-width($desktop-width) {
       font-size: 30px;
@@ -45,11 +53,14 @@
       margin-bottom: 21px;
       padding-right: 30px;
       padding-left: 30px;
+      text-align: center;
     }
   }
 
   &__text {
     margin: 0;
+    font-size: 14px;
+    line-height: 24px;
 
     @include media-width($desktop-width) {
       font-size: 18px;
