@@ -18,6 +18,16 @@
 .offering__motto {
   padding-top: 42px;
   padding-bottom: 36px;
+
+  @include media-width($tablet-width) {
+    padding-top: 47px;
+    padding-bottom: 47px;
+  }
+
+  @include media-width($tablet-width) {
+    padding-top: 70px;
+    padding-bottom: 76px;
+  }
 }
 
 .offering__question {
@@ -35,7 +45,7 @@
   }
 
   @include media-width($desktop-width) {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 120px;
+    padding-right: 120px;
   }
 }

@@ -1,26 +1,45 @@
 .footer__advertising {
-  padding-top: 40px;
+  padding-top: 38px;
   padding-bottom: 40px;
 
   @include media-width($tablet-width) {
     display: flex;
     justify-content: space-between;
+    padding-top: 38px;
+  }
+
+  @include media-width($desktop-width) {
+    padding-top: 75px;
   }
 }
 
 .footer__link {
-  margin-bottom: 43px;
+  margin-bottom: 40px;
   text-align: center;
 }
 
 .footer__social {
-  padding: 0;
-  margin-bottom: 41px;
+  margin-bottom: 31px;
+
+
+  @include media-width($tablet-width) {
+    padding-right: 15px;
+    padding-top: 5px;
+  }
+
+  @include media-width($desktop-width) {
+    padding-right: 0;
+    padding-left: 15px;
+  }
 }
 
 .footer__developer {
   display: flex;
   justify-content: center;
+
+  @include media-width($tablet-width) {
+    padding-top: 15px;
+  }
 }
 
 .footer__text {

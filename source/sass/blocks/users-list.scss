@@ -7,14 +7,14 @@
 }
 
 .users-list__info {
-  padding: 25px 13px 28px 17px;
+  padding: 19px 12px 17px 17px;
   margin-bottom: 20px;
   background-color: $gray;
 }
 
 .users-list__checkbox {
   width: 140px;
-  height: 31px;
+  height: 36px;
   background-color: $pink;
   color: $white;
   font-size: 12px;
@@ -22,8 +22,9 @@
   text-align: center;
   font-weight: bold;
   position: absolute;
+  text-transform: uppercase;
   top: 0;
-  right: 20px;
+  right: -1px;
   padding-top: 5px;
 
   @include media-width($tablet-width) {
