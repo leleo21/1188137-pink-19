@@ -74,6 +74,6 @@
   padding-top: 42px;
 
   @include media-width($desktop-width) {
-      padding-top: 91px;
+    padding-top: 91px;
   }
 }

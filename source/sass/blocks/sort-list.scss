@@ -1,5 +1,4 @@
 .sort-list {
-
   @include media-width($desktop-width) {
     display: flex;
     flex-wrap: wrap;
