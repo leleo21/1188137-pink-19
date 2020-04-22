@@ -5,7 +5,7 @@
   padding-right: 20px;
   max-width: 980px;
 
-    &--header {
+  &--header {
     max-width: none;
 
     @include media-width($desktop-width) {
