@@ -6,6 +6,8 @@
   }
 
   &__item {
+    margin-bottom: 20px;
+
     @include media-width($tablet-width) {
       width: calc((99.9% - 10px * 4) / 2);
       margin-bottom: 20px;
@@ -25,10 +27,11 @@
   }
 
   &__info {
+    background-color: $gray;
     padding: 19px 12px 17px 17px;
 
     @include media-width($tablet-width) {
-      padding: 19px 35px 17px 17px;
+      padding: 21px 21px 25px 28px;
     }
   }
 

@@ -19,6 +19,10 @@
     margin-bottom: 12px;
     font-size: 14px;
     line-height: 24px;
+
+    @include media-width($tablet-width) {
+      margin-bottom: 8px;
+    }
   }
 
   &__stats {
@@ -34,6 +38,8 @@
       @include media-width($tablet-width) {
         order: -1;
         margin-left: auto;
+        align-items: center;
+        margin-top: 0;
       }
     }
   }
@@ -51,6 +57,10 @@
     @include media-width($tablet-width) {
       margin-right: 0;
     }
+
+    &--main {
+      margin-left: 20px;
+    }
   }
 
   &__like {
@@ -65,6 +75,7 @@
   &--main {
     @include media-width($tablet-width) {
       flex-direction: row;
+      min-height: 0;
     }
   }
 }
