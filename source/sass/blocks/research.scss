@@ -2,78 +2,79 @@
   @include media-width($desktop-width) {
     background-color: $gray;
   }
-}
 
-.research__wrapper {
-  padding-top: 58px;
-  padding-bottom: 70px;
-  display: none;
 
-  @include media-width($tablet-width) {
-    display: flex;
-  }
+  &__wrapper {
+    padding-top: 58px;
+    padding-bottom: 70px;
+    display: none;
 
-  @include media-width($desktop-width) {
-    padding-top: 28px;
-  }
-}
+    @include media-width($tablet-width) {
+      display: flex;
+    }
 
-.research__picture {
-  margin-right: 70px;
-
-  & svg {
     @include media-width($desktop-width) {
-      width: 298px;
-      height: 345px;
+      padding-top: 28px;
     }
   }
-}
 
-.research__title {
-  font-size: 30px;
-  line-height: 33px;
-  font-weight: bold;
-  text-align: left;
-  margin-bottom: 13px;
-  max-width: 250px;
+  &__picture {
+    margin-right: 70px;
 
-  @include media-width($desktop-width) {
-    max-width: none;
-    margin-bottom: 23px;
+    & svg {
+      @include media-width($desktop-width) {
+        width: 298px;
+        height: 345px;
+      }
+    }
   }
-}
 
-.research__text {
-  font-size: 14px;
-  line-height: 24px;
-  text-align: left;
-  color: $dark;
-  margin-bottom: 11px;
+  &__details {
+    padding-top: 42px;
 
-  @include media-width($desktop-width) {
-    font-size: 18px;
-    line-height: 30px;
-    margin-bottom: 31px;
+    @include media-width($desktop-width) {
+      padding-top: 91px;
+    }
   }
-}
 
-.research__link {
-  font-size: 14px;
-  line-height: 24px;
-  text-align: left;
-  color: $pink;
-  text-decoration: underline;
+  &__title {
+    font-size: 30px;
+    line-height: 33px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 13px;
+    max-width: 250px;
 
-  @include media-width($desktop-width) {
-    font-size: 18px;
-    line-height: 30px;
+    @include media-width($desktop-width) {
+      max-width: none;
+      margin-bottom: 23px;
+    }
   }
-}
 
-.research__details {
-  padding-top: 42px;
+  &__text {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+    color: $dark;
+    margin-bottom: 11px;
 
-  @include media-width($desktop-width) {
-    padding-top: 91px;
+    @include media-width($desktop-width) {
+      font-size: 18px;
+      line-height: 30px;
+      margin-bottom: 31px;
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+    color: $pink;
+    text-decoration: underline;
+
+    @include media-width($desktop-width) {
+      font-size: 18px;
+      line-height: 30px;
+    }
   }
 }

@@ -4,60 +4,67 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
-}
 
-.users-list__info {
-  padding: 19px 12px 17px 17px;
-  margin-bottom: 20px;
-  background-color: $gray;
-}
+  &__item {
+    @include media-width($tablet-width) {
+      width: calc((99.9% - 10px * 4) / 2);
+      margin-bottom: 20px;
+      background-color: $gray;
+      display: flex;
+      flex-direction: column;
+    }
 
-.users-list__checkbox {
-  width: 140px;
-  height: 36px;
-  background-color: $pink;
-  color: $white;
-  font-size: 12px;
-  line-height: 24px;
-  text-align: center;
-  font-weight: bold;
-  position: absolute;
-  text-transform: uppercase;
-  top: 0;
-  right: -1px;
-  padding-top: 5px;
+    @include media-width($desktop-width) {
+      width: calc((99.9% - 10px * 6) / 3);
+    }
 
-  @include media-width($tablet-width) {
-    top: 50px;
-  }
-}
-
-.users-list__item {
-  @include media-width($tablet-width) {
-    width: calc((99.9% - 10px * 4) / 2);
-    margin-bottom: 20px;
+    &--main {
+      width: 100%;
+      position: relative;
+    }
   }
 
-  @include media-width($desktop-width) {
-    width: calc((99.9% - 10px * 6) / 3);
+  &__info {
+    padding: 19px 12px 17px 17px;
+
+    @include media-width($tablet-width) {
+      padding: 19px 35px 17px 17px;
+    }
   }
-}
 
-.users-list__picture {
-  width: 100%;
-}
+  &__checkbox {
+    width: 140px;
+    height: 36px;
+    background-color: $pink;
+    color: $white;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+    right: -1px;
+    padding-top: 5px;
 
-.users-list__image--main {
-  margin-right: -20px;
-  margin-left: -20px;
-
-  @include media-width($desktop-width) {
-    margin-right: -130px;
-    margin-left: -130px;
+    @include media-width($tablet-width) {
+      top: 50px;
+    }
   }
-}
 
-.users-list__item--main {
-  width: 100%;
-  position: relative;
+  &__picture {
+    width: 100%;
+  }
+
+  &__image {
+    &--main {
+      margin-right: -20px;
+      margin-left: -20px;
+
+      @include media-width($desktop-width) {
+        margin-right: -130px;
+        margin-left: -130px;
+      }
+    }
+  }
 }

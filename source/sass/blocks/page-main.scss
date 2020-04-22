@@ -1,41 +1,42 @@
 .page-main {
   color: $black;
   margin: 0;
-}
 
-.page-main__title {
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: $black;
 
-  @include media-width($tablet-width) {
-    background-image: url("../img/bg-back-tablet@1x.jpg");
+  &__title {
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $black;
+
+    @include media-width($tablet-width) {
+      background-image: url("../img/bg-back-tablet@1x.jpg");
+    }
+
+    @include media-width($desktop-width) {
+      background-image: url("../img/bg-back-desktop@1x.jpg");
+    }
   }
 
-  @include media-width($desktop-width) {
-    background-image: url("../img/bg-back-desktop@1x.jpg");
-  }
-}
-
-.page-main__tagline {
-  color: $white;
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 300;
-  padding-top: 27px;
-  text-align: center;
-  padding-bottom: 81px;
-
-  @include media-width($tablet-width) {
+  &__tagline {
     color: $white;
-    font-size: 50px;
-    line-height: 60px;
-    padding-top: 70px;
-    padding-bottom: 139px;
-  }
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
+    padding-top: 27px;
+    text-align: center;
+    padding-bottom: 81px;
 
-  @include media-width($desktop-width) {
-    padding: 64px 200px 101px 200px;
+    @include media-width($tablet-width) {
+      color: $white;
+      font-size: 50px;
+      line-height: 60px;
+      padding-top: 70px;
+      padding-bottom: 139px;
+    }
+
+    @include media-width($desktop-width) {
+      padding: 64px 200px 101px 200px;
+    }
   }
 }

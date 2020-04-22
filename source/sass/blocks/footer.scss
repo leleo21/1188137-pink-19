@@ -1,78 +1,80 @@
-.footer__advertising {
-  padding-top: 38px;
-  padding-bottom: 40px;
-
-  @include media-width($tablet-width) {
-    display: flex;
-    justify-content: space-between;
+.footer {
+  &__advertising {
     padding-top: 38px;
+    padding-bottom: 40px;
+
+    @include media-width($tablet-width) {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 38px;
+    }
+
+    @include media-width($desktop-width) {
+      padding-top: 75px;
+    }
   }
 
-  @include media-width($desktop-width) {
-    padding-top: 75px;
+  &__link {
+    margin-bottom: 40px;
+    text-align: center;
   }
-}
 
-.footer__link {
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.footer__social {
-  margin-bottom: 31px;
+  &__social {
+    margin-bottom: 31px;
 
 
-  @include media-width($tablet-width) {
-    padding-right: 15px;
+    @include media-width($tablet-width) {
+      padding-right: 15px;
+      padding-top: 5px;
+    }
+
+    @include media-width($desktop-width) {
+      padding-right: 0;
+      padding-left: 15px;
+    }
+  }
+
+  &__developer {
+    display: flex;
+    justify-content: center;
+
+    @include media-width($tablet-width) {
+      padding-top: 15px;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    color: $dark;
+    margin-right: 15px;
     padding-top: 5px;
+
+    @include media-width($desktop-width) {
+      font-size: 18px;
+    }
   }
 
-  @include media-width($desktop-width) {
-    padding-right: 0;
-    padding-left: 15px;
-  }
-}
-
-.footer__developer {
-  display: flex;
-  justify-content: center;
-
-  @include media-width($tablet-width) {
-    padding-top: 15px;
-  }
-}
-
-.footer__text {
-  font-size: 14px;
-  line-height: 18px;
-  text-align: left;
-  color: $dark;
-  margin-right: 15px;
-  padding-top: 5px;
-
-  @include media-width($desktop-width) {
-    font-size: 18px;
-  }
-}
-
-.footer__logo-image {
-  display: inline-block;
-}
-
-.footer__html-academy {
-  &:hover {
-    color: red;
+  &__logo-image {
+    display: inline-block;
   }
 
-  &:active {
-    border-color: rgba(40, 54, 69, 0.3);
+  &__html-academy {
+    &:hover {
+      color: red;
+    }
+
+    &:active {
+      border-color: rgba(40, 54, 69, 0.3);
+    }
   }
-}
 
-.footer--index {
-  display: none;
+  &--index {
+    display: none;
 
-  @include media-width($tablet-width) {
-    display: block;
+    @include media-width($tablet-width) {
+      display: block;
+    }
   }
 }

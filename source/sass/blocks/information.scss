@@ -2,65 +2,69 @@
   @include media-width($tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    flex-grow: 1;
+    min-height: 155px;
   }
-}
 
-.information__heart {
-  border: none;
-  background-color: transparent;
-  padding: 0;
-  margin-right: 15px;
-}
-
-.information__like {
-  color: $pink;
-  font-size: 12px;
-  line-height: 24px;
-  font-weight: normal;
-  text-align: left;
-  text-transform: uppercase;
-}
-
-.information__name {
-  color: $dark;
-  font-size: 14px;
-  line-height: 24px;
-  order: -2;
-  min-width: 70%;
-}
-
-.information__time {
-  font-weight: normal;
-}
-
-.information__text {
-  color: $dark;
-  margin-bottom: 12px;
-  font-size: 14px;
-  line-height: 24px;
-}
-
-.information__stats {
-  width: 100%;
-
-  @include media-width($tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-    flex-wrap: nowrap;
+  &__name {
+    color: $dark;
+    font-size: 14px;
+    line-height: 24px;
+    order: -2;
   }
-}
 
-.information__stats--main {
-  width: 130px;
-
-  @include media-width($tablet-width) {
-    order: -1;
+  &__text {
+    color: $dark;
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 24px;
   }
-}
 
-.information--main {
-  @include media-width($tablet-width) {
-    justify-content: space-between;
+  &__stats {
+    @include media-width($tablet-width) {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      flex-wrap: nowrap;
+      margin-top: auto;
+    }
+
+    &--main {
+      @include media-width($tablet-width) {
+        order: -1;
+        margin-left: auto;
+      }
+    }
+  }
+
+  &__time {
+    font-weight: normal;
+  }
+
+  &__heart {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin-right: 15px;
+
+    @include media-width($tablet-width) {
+      margin-right: 0;
+    }
+  }
+
+  &__like {
+    color: $pink;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: normal;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  &--main {
+    @include media-width($tablet-width) {
+      flex-direction: row;
+    }
   }
 }

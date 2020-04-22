@@ -13,39 +13,39 @@
     font-size: 50px;
     line-height: 60px;
   }
-}
 
-.offering__motto {
-  padding-top: 42px;
-  padding-bottom: 36px;
+  &__motto {
+    padding-top: 42px;
+    padding-bottom: 36px;
 
-  @include media-width($tablet-width) {
-    padding-top: 48px;
-    padding-bottom: 43px;
+    @include media-width($tablet-width) {
+      padding-top: 48px;
+      padding-bottom: 43px;
+    }
+
+    @include media-width($desktop-width) {
+      padding-top: 70px;
+      padding-bottom: 76px;
+    }
   }
 
-  @include media-width($desktop-width) {
-    padding-top: 70px;
-    padding-bottom: 76px;
-  }
-}
+  &__question {
+    margin-bottom: 32px;
 
-.offering__question {
-  margin-bottom: 32px;
-
-  @include media-width($tablet-width) {
-    margin-bottom: 0;
-  }
-}
-
-.offering__answer {
-  @include media-width($tablet-width) {
-    padding-left: 30px;
-    padding-right: 30px;
+    @include media-width($tablet-width) {
+      margin-bottom: 0;
+    }
   }
 
-  @include media-width($desktop-width) {
-    padding-left: 120px;
-    padding-right: 120px;
+  &__answer {
+    @include media-width($tablet-width) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    @include media-width($desktop-width) {
+      padding-left: 120px;
+      padding-right: 120px;
+    }
   }
 }

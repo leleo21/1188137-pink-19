@@ -16,8 +16,8 @@
   @include media-width($desktop-width) {
     margin-bottom: 54px;
   }
-}
 
-.apps__item-link {
-  color: $white;
+  &__item-link {
+    color: $white;
+  }
 }

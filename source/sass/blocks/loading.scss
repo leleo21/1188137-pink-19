@@ -1,156 +1,160 @@
-.loading__picture {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.loading__text-item {
-  font-size: 14px;
-  line-height: 30px;
-  color: $dark;
-  text-align: center;
-  background-color: $white;
-  padding-bottom: 41px;
-
-  @include media-width($tablet-width) {
-    font-size: 18px;
-    padding-bottom: 72px;
-  }
-}
-
-.loading__control {
-  background-color: $gray;
-  padding-top: 20px;
-  padding-bottom: 43px;
-
-  @include media-width($tablet-width) {
-    padding: 0;
-  }
-}
-
-.loading__toggle {
-  display: flex;
-  justify-content: space-around;
-
-  @include media-width($tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 0;
-  }
-}
-
-.loading__slider {
-  width: 240px;
-  height: 2px;
-  background-color: $dark;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 34px;
-
-  @include media-width($tablet-width) {
-    display: none;
-  }
-}
-
-.loading__button {
-  display: block;
-  border: 3px solid $dark;
-  border-radius: 35px;
-  padding: 20px 30px 20px 30px;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: bold;
-  min-width: 280px;
-  margin-left: auto;
-  margin-right: auto;
-
-  @include media-width($tablet-width) {
-    min-width: 260px;
-  }
-
-  @include media-width($desktop-width) {
-    min-width: 183px;
-    display: inline-block;
-  }
-}
-
-.loading__list {
-  padding-bottom: 22px;
-  background-color: $gray;
-
-  @include media-width($desktop-width) {
-    background-color: $white;
-  }
-}
-
-.loading__action {
-  padding-top: 38px;
-  background-color: trasnparent;
-  text-align: center;
-  border-top: 1px solid $dark;
-  margin-left: -20px;
-  margin-right: -20px;
-
-  @include media-width($tablet-width) {
-    border: none;
-    padding-top: 67px;
-    margin: 0;
-  }
-
-  @include media-width($desktop-width) {
-    padding-top: 146px;
-  }
-}
-
-.loading__post {
-  padding-top: 20px;
-
-  @include media-width($tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 54px;
-    padding-top: 57px;
-  }
-
-  @include media-width($desktop-width) {
-    padding: 57px 60px 57px 80px;
+.loading {
+  &__list {
+    padding-bottom: 22px;
     background-color: $gray;
-  }
-}
 
-.loading__button--upload {
-  border-color: $pink;
-  color: $pink;
-  margin-bottom: 12px;
-
-  @include media-width($desktop-width) {
-    margin: 0;
-    margin-right: 44px;
-    margin-left: 104px;
+    @include media-width($desktop-width) {
+      background-color: $white;
+    }
   }
 
-  &:hover {
-    background-color: $pink;
-    color: $white;
+  &__text-item {
+    font-size: 14px;
+    line-height: 30px;
+    color: $dark;
+    text-align: center;
+    background-color: $white;
+    padding-bottom: 41px;
+
+    @include media-width($tablet-width) {
+      font-size: 18px;
+      padding-bottom: 72px;
+    }
   }
 
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
+  &__post {
+    padding-top: 20px;
+
+    @include media-width($tablet-width) {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 54px;
+      padding-top: 57px;
+    }
+
+    @include media-width($desktop-width) {
+      padding: 57px 60px 57px 80px;
+      background-color: $gray;
+    }
   }
-}
 
-.loading__button--cancel {
-  border-color: rgba(40, 54, 69, 0.1);
-  color: rgba(40, 54, 69, 0.1);
-
-  &:hover {
-    border-color: rgba(40, 54, 69, 0.3);
-    color: rgba(40, 54, 69, 0.3);
+  &__picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  &:active {
-    background-color: rgba(40, 54, 69, 0.3);
-    color: rgba(255, 255, 255, 0.3);
-    border-color: rgba(40, 54, 69, 0.3);
+
+
+  &__control {
+    background-color: $gray;
+    padding-top: 20px;
+    padding-bottom: 43px;
+
+    @include media-width($tablet-width) {
+      padding: 0;
+    }
+  }
+
+  &__toggle {
+    display: flex;
+    justify-content: space-around;
+
+    @include media-width($tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 0;
+    }
+  }
+
+  &__slider {
+    width: 240px;
+    height: 2px;
+    background-color: $dark;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 34px;
+
+    @include media-width($tablet-width) {
+      display: none;
+    }
+  }
+
+  &__action {
+    padding-top: 38px;
+    background-color: trasnparent;
+    text-align: center;
+    border-top: 1px solid $dark;
+    margin-left: -20px;
+    margin-right: -20px;
+
+    @include media-width($tablet-width) {
+      border: none;
+      padding-top: 67px;
+      margin: 0;
+    }
+
+    @include media-width($desktop-width) {
+      padding-top: 146px;
+    }
+  }
+
+  &__button {
+    display: block;
+    border: 3px solid $dark;
+    border-radius: 35px;
+    padding: 20px 30px 20px 30px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+    min-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include media-width($tablet-width) {
+      min-width: 260px;
+    }
+
+    @include media-width($desktop-width) {
+      min-width: 183px;
+      display: inline-block;
+    }
+
+    &--upload {
+      border-color: $pink;
+      color: $pink;
+      margin-bottom: 12px;
+
+      @include media-width($desktop-width) {
+        margin: 0;
+        margin-right: 44px;
+        margin-left: 104px;
+      }
+
+      &:hover {
+        background-color: $pink;
+        color: $white;
+      }
+
+      &:active {
+        color: rgba(255, 255, 255, 0.3);
+      }
+    }
+
+    &--cancel {
+      border-color: rgba(40, 54, 69, 0.1);
+      color: rgba(40, 54, 69, 0.1);
+
+      &:hover {
+        border-color: rgba(40, 54, 69, 0.3);
+        color: rgba(40, 54, 69, 0.3);
+      }
+
+      &:active {
+        background-color: rgba(40, 54, 69, 0.3);
+        color: rgba(255, 255, 255, 0.3);
+        border-color: rgba(40, 54, 69, 0.3);
+      }
+    }
   }
 }

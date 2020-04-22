@@ -4,128 +4,105 @@
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 51px;
-}
 
-.prices__table {
-  width: 100%;
-  margin-bottom: 45px;
-}
-
-.prices__heading {
-  background-color: $dark;
-}
-
-.prices__title {
-  color: $white;
-  font-size: 18px;
-  line-height: 30px;
-  padding-top: 23px;
-  padding-bottom: 12px;
-
-  @include media-width($tablet-width) {
-    font-size: 16px;
-    padding-top: 19px;
-    padding-bottom: 11px;
+  &__table {
+    width: 100%;
+    margin-bottom: 45px;
   }
 
-  @include media-width($desktop-width) {
+  &__heading {
+    background-color: $dark;
+
+    &--off {
+      display: none;
+
+      @include media-width($tablet-width) {
+        display: table-cell;
+        opacity: 0;
+      }
+    }
+
+    &--showmobile {
+      display: none;
+
+      @include media-width($tablet-width) {
+        display: table-cell;
+      }
+    }
+  }
+
+  &__title {
+    color: $white;
     font-size: 18px;
+    line-height: 30px;
     padding-top: 23px;
     padding-bottom: 12px;
+
+    @include media-width($tablet-width) {
+      font-size: 16px;
+      padding-top: 19px;
+      padding-bottom: 11px;
+    }
+
+    @include media-width($desktop-width) {
+      font-size: 18px;
+      padding-top: 23px;
+      padding-bottom: 12px;
+    }
   }
-}
 
-.prices__worth {
-  font-size: 24px;
-  font-weight: 300;
-  color: $white;
-  padding-bottom: 21px;
-
-  @include media-width($tablet-width) {
-    font-size: 18px;
-    padding-bottom: 13px;
-  }
-
-  @include media-width($desktop-width) {
+  &__worth {
     font-size: 24px;
+    font-weight: 300;
+    color: $white;
     padding-bottom: 21px;
-  }
-}
 
-.prices__toggles {
-  display: flex;
-  justify-content: center;
-  padding-top: 45px;
-  margin-bottom: 45px;
-  background-color: $gray;
-}
+    @include media-width($tablet-width) {
+      font-size: 18px;
+      padding-bottom: 13px;
+    }
 
-.prices__option {
-  font-size: 14px;
-  line-height: 30px;
-  color: $dark;
-  background-color: $white;
-  text-align: left;
-  font-weight: 300;
-  padding-left: 24px;
-
-  @include media-width($tablet-width) {
-    text-align: center;
+    @include media-width($desktop-width) {
+      font-size: 24px;
+      padding-bottom: 21px;
+    }
   }
 
-  @include media-width($desktop-width) {
+  &__option {
+    font-size: 14px;
+    line-height: 30px;
+    color: $dark;
+    background-color: $white;
     text-align: left;
+    font-weight: 300;
     padding-left: 24px;
-  }
-}
 
-.prices__choice {
-  text-align: center;
-  padding-top: 14px;
-  padding-bottom: 10px;
-  background-color: $white;
-}
+    @include media-width($tablet-width) {
+      text-align: center;
+    }
 
-
-.prices__slider {
-  width: 6px;
-  height: 6px;
-  opacity: 0.3;
-  background-color: $dark;
-  border-radius: 50%;
-  border: none;
-  margin: 0 10px 10px 10px;
-
-  @include media-width($desktop-width) {
-    display: none;
-  }
-}
-
-.prices__heading--off {
-  display: none;
-
-  @include media-width($tablet-width) {
-    display: table-cell;
-    opacity: 0;
-  }
-}
-
-.prices__choice--showmobile {
-  display: none;
-
-  @include media-width($tablet-width) {
-    display: table-cell;
+    @include media-width($desktop-width) {
+      text-align: left;
+      padding-left: 24px;
+    }
   }
 
-  @include media-width($tablet-width) {
-    display: table-cell;
-  }
-}
+  &__choice {
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 10px;
+    background-color: $white;
 
-.prices__heading--showmobile {
-  display: none;
+    &--showmobile {
+      display: none;
 
-  @include media-width($tablet-width) {
-    display: table-cell;
+      @include media-width($tablet-width) {
+        display: table-cell;
+      }
+
+      @include media-width($tablet-width) {
+        display: table-cell;
+      }
+    }
   }
 }

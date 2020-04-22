@@ -1,3 +1,5 @@
-.site-list__item {
-  padding: 26px 88px 26px 89px;
+.site-list {
+  &__item {
+    padding: 26px 88px 26px 89px;
+  }
 }

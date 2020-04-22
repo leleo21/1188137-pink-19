@@ -1,26 +1,107 @@
 .header {
   background-color: $black;
-}
 
-.header__wrapper {
-  @include media-width($desktop-width) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  &__wrapper {
+    @include media-width($desktop-width) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
-}
 
-.header__top {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 21px;
-  padding-bottom: 24px;
+  &__top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 21px;
+    padding-bottom: 24px;
 
-  @include media-width($tablet-width) {
-    padding-top: 26px;
-    padding-bottom: 43px;
-    align-items: flex-end;
+    @include media-width($tablet-width) {
+      padding-top: 26px;
+      padding-bottom: 43px;
+      align-items: flex-end;
+    }
+  }
+
+  &__toggle {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 24px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    font-size: 0;
+    cursor: pointer;
+
+    @include media-width($desktop-width) {
+      display: none;
+    }
+
+    &::before,
+    &::after,
+    & span {
+      content: "";
+      position: absolute;
+      right: 0;
+      width: 100%;
+      height: 3px;
+      background-color: $white;
+      transition: 0.1;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+
+    & span {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &:hover {
+      &::before,
+      &::after,
+      & span {
+        background-color: $pink;
+      }
+    }
+
+    &:active {
+      &::before,
+      &::after,
+      & span {
+        background-color: rgba(210, 40, 86, 0.3);
+      }
+    }
+
+    &--opened {
+      &::before,
+      &::after {
+        top: 50%;
+        width: 57%;
+        height: 4px;
+        transform: translateY(-50%) rotate(45deg);
+      }
+
+      &::after {
+        bottom: auto;
+        transform: translateY(-50%) rotate(-45deg);
+      }
+
+      & span {
+        width: 0;
+      }
+    }
+
+    &--nojs {
+      display: none;
+    }
   }
 }

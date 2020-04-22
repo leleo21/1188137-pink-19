@@ -1,27 +1,29 @@
-.input-list__text {
-  padding: 22px 21px 18px 21px;
-  border: 2px solid $lightgray;
-  font-size: 18px;
-  line-height: 30px;
-  color: $dark;
-  width: 100%;
-}
+.input-list {
+  &__item {
+    margin-bottom: 10px;
 
-.input-list__label {
-  padding-left: 21px;
-
-  @include media-width($tablet-width) {
-    padding-left: 0;
-    padding-right: 22px;
+    @include media-width($tablet-width) {
+      margin-bottom: 56px;
+      display: flex;
+      align-items: center;
+    }
   }
-}
 
-.input-list__item {
-  margin-bottom: 10px;
+  &__label {
+    padding-left: 21px;
 
-  @include media-width($tablet-width) {
-    margin-bottom: 56px;
-    display: flex;
-    align-items: center;
+    @include media-width($tablet-width) {
+      padding-left: 0;
+      padding-right: 22px;
+    }
+  }
+
+  &__text {
+    padding: 22px 21px 18px 21px;
+    border: 2px solid $lightgray;
+    font-size: 18px;
+    line-height: 30px;
+    color: $dark;
+    width: 100%;
   }
 }
