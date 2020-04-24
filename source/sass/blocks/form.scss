@@ -218,7 +218,7 @@
   display: none;
 
   @include media-width($tablet-width) {
-    display: inline-block;    
+    display: inline-block;
   }
 }
 

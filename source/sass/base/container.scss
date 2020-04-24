@@ -8,7 +8,7 @@
 
 .container--header {
   max-width: none;
-  
+
   @include media-width($desktop-width) {
     max-width: 980px;
   }
