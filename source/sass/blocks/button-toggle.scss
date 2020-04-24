@@ -1,25 +1,25 @@
 .button-toggle {
   margin-bottom: 40px;
+}
 
-  &__wrapper {
-    @include media-width($tablet-width) {
-      border-bottom: 1px solid $dark;
-    }
+.button-toggle__wrapper {
+  @include media-width($tablet-width) {
+    border-bottom: 1px solid $dark;
+  }
+}
+
+.button-toggle__icon {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+
+  @include media-width($tablet-width) {
+    margin-right: 200px;
+    margin-bottom: 24px;
+    margin-top: 24px;
   }
 
-  &__icon {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-
-    @include media-width($tablet-width) {
-      margin-right: 200px;
-      margin-bottom: 24px;
-      margin-top: 24px;
-    }
-
-    @include media-width($desktop-width) {
-      margin-right: 300px;
-    }
+  @include media-width($desktop-width) {
+    margin-right: 300px;
   }
 }

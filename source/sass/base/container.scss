@@ -4,12 +4,12 @@
   padding-left: 20px;
   padding-right: 20px;
   max-width: 980px;
+}
 
-  &--header {
-    max-width: none;
-
-    @include media-width($desktop-width) {
-      max-width: 980px;
-    }
+.container--header {
+  max-width: none;
+  
+  @include media-width($desktop-width) {
+    max-width: 980px;
   }
 }

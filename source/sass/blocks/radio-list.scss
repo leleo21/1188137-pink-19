@@ -1,15 +1,13 @@
-.radio-list {
-  &__label {
-    font-size: 18px;
-    line-height: 30px;
-    color: $dark;
-  }
+.radio-list__label {
+  font-size: 18px;
+  line-height: 30px;
+  color: $dark;
+}
 
-  &__input {
-    margin-right: 33px;
-  }
+.radio-list__input {
+  margin-right: 33px;
+}
 
-  &__item {
-    margin-bottom: 39px;
-  }
+.radio-list__item {
+  margin-bottom: 39px;
 }

@@ -6,79 +6,81 @@
     display: block;
     width: auto;
   }
+}
 
-  @media (max-width: $until-desktop-width) {
-    &--nojs {
-      display: block;
-    }
+.main-nav__list {
+  margin-left: -20px;
+  margin-right: -20px;
+
+  @include media-width($desktop-width) {
+    display: flex;
+    margin: 0;
   }
+}
 
-  &__list {
-    margin-left: -20px;
-    margin-right: -20px;
+.main-nav__item {
+  text-transform: uppercase;
+  border-bottom: 1px solid $dark;
+  text-align: center;
 
-    @include media-width($desktop-width) {
-      display: flex;
-      margin: 0;
-    }
+  @include media-width($desktop-width) {
+    border: none;
+    text-transform: capitalize;
+    margin-right: 80px;
   }
+}
 
-  &__item {
-    text-transform: uppercase;
-    border-bottom: 1px solid $dark;
-    text-align: center;
+.main-nav__item:first-child {
+  border-top: 1px solid $dark;
 
-    @include media-width($desktop-width) {
-      border: none;
-      text-transform: capitalize;
-      margin-right: 80px;
-    }
-
-    &:first-child {
-      border-top: 1px solid $dark;
-
-      @include media-width($desktop-width) {
-        border-top: none;
-      }
-    }
-
-    &:last-child {
-      @include media-width($desktop-width) {
-        margin-right: 0;
-      }
-    }
+  @include media-width($desktop-width) {
+    border-top: none;
   }
+}
 
-  &__link {
-    display: block;
-    padding: 16px 20px 15px 20px;
+.main-nav__item:last-child {
+  @include media-width($desktop-width) {
+    margin-right: 0;
+  }
+}
+
+.main-nav__link {
+  display: block;
+  padding: 16px 20px 15px 20px;
+  color: $white;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+
+  @include media-width($desktop-width) {
+    font-weight: normal;
+    padding: 0;
+    line-height: 18px;
+  }
+}
+
+.main-nav__link:focus {
+  @include media-width($desktop-width) {
     color: $white;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 32px;
-
-    @include media-width($desktop-width) {
-      font-weight: normal;
-      padding: 0;
-      line-height: 18px;
-
-      &:focus {
-        color: $white;
-        text-decoration: underline;
-      }
-    }
-
-    &:hover {
-      color: $pink;
-    }
-
-    &:active {
-      color: rgba(255, 255, 255, 0.3);
-      text-decoration: none;
-    }
+    text-decoration: underline;
   }
+}
 
-  &--opened {
+.main-nav__link:hover {
+  color: $pink;
+}
+
+.main-nav__link:active {
+  color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+}
+
+.main-nav--nojs {
+  @media (max-width: $until-desktop-width) {
     display: block;
   }
+}
+
+.main-nav--opened {
+  display: block;
 }

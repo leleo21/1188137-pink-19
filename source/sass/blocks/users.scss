@@ -1,20 +1,24 @@
 .users {
   padding-bottom: 20px;
 
-  &__text-item {
-    padding: 45px 14px 49px 14px;
-    text-align: center;
-    font-size: 14px;
-    line-height: 30px;
-    color: $dark;
+  @include media-width($desktop-width) {
+    padding-bottom: 0;
+  }
+}
 
-    @include media-width($tablet-width) {
-      font-size: 18px;
-      padding: 93px 40px 75px 40px;
-    }
+.users__text-item {
+  padding: 45px 14px 49px 14px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  color: $dark;
 
-    @include media-width($desktop-width) {
-      padding: 92px 150px 87px 150px;
-    }
+  @include media-width($tablet-width) {
+    font-size: 18px;
+    padding: 93px 40px 76px 40px;
+  }
+
+  @include media-width($desktop-width) {
+    padding: 92px 150px 87px 150px;
   }
 }

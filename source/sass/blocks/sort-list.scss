@@ -5,68 +5,68 @@
     display: flex;
     flex-wrap: wrap;
   }
+}
 
-  &__item {
-    margin-bottom: 29px;
+.sort-list__item {
+  margin-bottom: 29px;
+  text-align: center;
+
+  @include media-width($tablet-width) {
+    text-align: left;
+    margin-bottom: 34px;
+  }
+
+  @include media-width($desktop-width) {
+    width: calc((99.9%  - 20px * 2) / 3);
+    margin-right: 20px;
     text-align: center;
+  }
+}
 
-    @include media-width($tablet-width) {
-      text-align: left;
-      margin-bottom: 34px;
-    }
+.sort-list__item:nth-of-type(3n) {
+  margin-right: 0;
+}
 
-    @include media-width($desktop-width) {
-      width: calc((99.9%  - 20px * 2) / 3);
-      margin-right: 20px;
-      text-align: center;
+.sort-list__picture {
+  display: none;
+  width: auto;
 
-      &:nth-of-type(3n) {
-        margin-right: 0;
-      }
-    }
+  @include media-width($desktop-width) {
+    display: inline-block;
+    margin-bottom: 53px;
+  }
+}
+
+.sort-list__title {
+  color: $black;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 14px;
+
+  @include media-width($tablet-width) {
+    text-align: left;
+    margin-bottom: 13px;
   }
 
-  &__picture {
-    display: none;
-    width: auto;
-
-    @include media-width($desktop-width) {
-      display: inline-block;
-      margin-bottom: 53px;
-    }
+  @include media-width($desktop-width) {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 21px;
+    padding-right: 30px;
+    padding-left: 30px;
+    text-align: center;
   }
+}
 
-  &__title {
-    color: $black;
+.sort-list__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+
+  @include media-width($desktop-width) {
     font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 14px;
-
-    @include media-width($tablet-width) {
-      text-align: left;
-      margin-bottom: 13px;
-    }
-
-    @include media-width($desktop-width) {
-      font-size: 30px;
-      line-height: 30px;
-      margin-bottom: 21px;
-      padding-right: 30px;
-      padding-left: 30px;
-      text-align: center;
-    }
-  }
-
-  &__text {
-    margin: 0;
-    font-size: 14px;
-    line-height: 24px;
-
-    @include media-width($desktop-width) {
-      font-size: 18px;
-      line-height: 30px;
-      padding-right: 30px;
-      padding-left: 30px;
-    }
+    line-height: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 }
