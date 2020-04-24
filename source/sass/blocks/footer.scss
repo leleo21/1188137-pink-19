@@ -67,7 +67,7 @@
   opacity: 0.3;
 }
 
-.footer--index {
+.footer--hidden {
   display: none;
 
   @include media-width($tablet-width) {

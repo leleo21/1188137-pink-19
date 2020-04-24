@@ -40,12 +40,14 @@
 
 .offering__answer {
   @include media-width($tablet-width) {
-    padding-left: 30px;
-    padding-right: 30px;
+    max-width: 560px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   @include media-width($desktop-width) {
-    padding-left: 120px;
-    padding-right: 120px;
+    max-width: 660px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
