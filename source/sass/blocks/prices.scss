@@ -1,14 +1,19 @@
 .prices {
   background-color: $gray;
-  padding-top: 97px;
+  padding-top: 89px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 51px;
+
+  @include media-width($tablet-width) {
+    padding-bottom: 22px;
+  }
 }
 
 .prices__table {
   width: 100%;
   margin-bottom: 45px;
+  text-transform: uppercase;
 }
 
 .prices__heading {
@@ -19,13 +24,12 @@
   color: $white;
   font-size: 18px;
   line-height: 30px;
-  padding-top: 23px;
-  padding-bottom: 12px;
+  padding-top: 15px;
+  padding-bottom: 2px;
 
   @include media-width($tablet-width) {
     font-size: 16px;
-    padding-top: 19px;
-    padding-bottom: 11px;
+    padding-top: 11px;
   }
 
   @include media-width($desktop-width) {
@@ -52,30 +56,28 @@
   }
 }
 
-.prices__toggles {
-  display: flex;
-  justify-content: center;
-  padding-top: 45px;
-  margin-bottom: 45px;
-  background-color: $gray;
-}
-
 .prices__option {
+  display: flex;
+  justify-content: space-between;
   font-size: 14px;
   line-height: 30px;
   color: $dark;
   background-color: $white;
   text-align: left;
   font-weight: 300;
-  padding-left: 24px;
+  padding: 10px 20px 10px 24px;
 
   @include media-width($tablet-width) {
-    text-align: center;
+    display: table-cell;
+    text-transform: capitalize;
+    padding: 0;
+    padding-left: 15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
   }
 
   @include media-width($desktop-width) {
     text-align: left;
-    padding-left: 24px;
   }
 }
 
@@ -84,20 +86,22 @@
   padding-top: 14px;
   padding-bottom: 10px;
   background-color: $white;
+  display: none;
+
+  @include media-width($tablet-width) {
+    display: table-cell;
+  }
 }
 
-
-.prices__slider {
-  width: 6px;
-  height: 6px;
-  opacity: 0.3;
-  background-color: $dark;
-  border-radius: 50%;
-  border: none;
-  margin: 0 10px 10px 10px;
-
-  @include media-width($desktop-width) {
+.prices__selection {
+  @include media-width($tablet-width) {
     display: none;
+  }
+}
+
+.prices td {
+  @include media-width($tablet-width) {
+    width: calc(99.9% / 4);
   }
 }
 
@@ -107,18 +111,6 @@
   @include media-width($tablet-width) {
     display: table-cell;
     opacity: 0;
-  }
-}
-
-.prices__choice--showmobile {
-  display: none;
-
-  @include media-width($tablet-width) {
-    display: table-cell;
-  }
-
-  @include media-width($tablet-width) {
-    display: table-cell;
   }
 }
 

@@ -1,0 +1,76 @@
+.footer__advertising {
+  padding-top: 38px;
+  padding-bottom: 40px;
+
+  @include media-width($tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 38px;
+  }
+
+  @include media-width($desktop-width) {
+    padding-top: 75px;
+  }
+}
+
+.footer__link {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.footer__social {
+  margin-bottom: 31px;
+
+  @include media-width($tablet-width) {
+    padding-right: 15px;
+    padding-top: 5px;
+  }
+
+  @include media-width($desktop-width) {
+    padding-right: 0;
+    padding-left: 15px;
+  }
+}
+
+.footer__developer {
+  display: flex;
+  justify-content: center;
+
+  @include media-width($tablet-width) {
+    padding-top: 15px;
+  }
+}
+
+.footer__text {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  color: $dark;
+  margin-right: 15px;
+  padding-top: 5px;
+
+  @include media-width($desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.footer__logo-image {
+  display: inline-block;
+}
+
+.footer__html-academy:hover path {
+  fill: $dark;
+}
+
+.footer__html-academy:active path {
+  fill: $dark;
+  opacity: 0.3;
+}
+
+.footer--hidden {
+  display: none;
+
+  @include media-width($tablet-width) {
+    display: block;
+  }
+}

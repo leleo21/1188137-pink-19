@@ -2,13 +2,53 @@
   @include media-width($tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    flex-grow: 1;
+    min-height: 155px;
   }
+}
+
+.information__name {
+  color: $dark;
+  font-size: 14px;
+  line-height: 24px;
+  order: -2;
+}
+
+.information__text {
+  color: $dark;
+  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 24px;
+
+  @include media-width($tablet-width) {
+    margin-bottom: 5px;
+  }
+}
+
+.information__stats {
+  @include media-width($tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    margin-top: auto;
+  }
+}
+
+.information__time {
+  font-weight: normal;
 }
 
 .information__heart {
   border: none;
   background-color: transparent;
-  padding-right: 20px;
+  padding: 0;
+  margin-right: 15px;
+
+  @include media-width($tablet-width) {
+    margin-right: 10px;
+  }
 }
 
 .information__like {
@@ -17,48 +57,28 @@
   line-height: 24px;
   font-weight: normal;
   text-align: left;
-}
-
-.information__name {
-  color: $dark;
-  font-size: 14px;
-  line-height: 24px;
-  order: -2;
-  min-width: 70%;
-}
-
-.information__time {
-  font-weight: normal;
-}
-
-.information__text {
-  color: $dark;
-  margin-bottom: 20px;
-  font-size: 14px;
-  line-height: 24px;
-}
-
-.information__stats {
-  width: 100%;
-
-  @include media-width($tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-    flex-wrap: nowrap;
-  }
-}
-
-.information__stats--main {
-  width: 130px;
-
-  @include media-width($tablet-width) {
-    order: -1;
-  }
+  text-transform: uppercase;
 }
 
 .information--main {
   @include media-width($tablet-width) {
-    justify-content: space-between;
+    flex-direction: row;
+    min-height: 0;
+  }
+}
+
+.information__heart--main {
+  @include media-width($tablet-width) {
+    margin-left: 19px;
+    margin-right: 8px;
+  }
+}
+
+.information__stats--main {
+  @include media-width($tablet-width) {
+    order: -1;
+    margin-left: auto;
+    align-items: center;
+    margin-top: 0;
   }
 }

@@ -1,0 +1,56 @@
+.dots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include media-width($desktop-width) {
+    display: none;
+  }
+}
+
+.dots__item {
+  margin-right: 3px;
+  margin-left: 3px;
+  margin-bottom: 3px;
+}
+
+.dots__button {
+  position: relative;
+  vertical-align: top;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  box-shadow: none;
+  background: none;
+  cursor: pointer;
+}
+
+.dots__button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: $dark;
+  opacity: 0.3;
+  transition: 0.2s;
+}
+
+.dots__button--active::before {
+  width: 12px;
+  height: 12px;
+  border: 3px solid $dark;
+  background-color: transparent;
+}
+
+.dots--prices {
+  @include media-width($tablet-width) {
+    display: none;
+  }
+}

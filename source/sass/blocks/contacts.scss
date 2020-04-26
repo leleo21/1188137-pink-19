@@ -1,6 +1,10 @@
 .contacts {
   background-color: $white;
   padding-top: 50px;
+
+  @include media-width($tablet-width) {
+    padding-top: 46px;
+  }
 }
 
 .contacts__questions {
@@ -13,7 +17,7 @@
   @include media-width($tablet-width) {
     font-size: 40px;
     line-height: 50px;
-    margin-bottom: 57px;
+    margin-bottom: 41px;
   }
 
   @include media-width($desktop-width) {
@@ -33,30 +37,6 @@
   }
 }
 
-.contacts__relations {
-  font-size: 24px;
-  text-align: center;
-  color: $pink;
-
-  &:hover {
-    color: $black;
-    text-decoration: underline;
-  }
-
-  &:active {
-    color: rgba(40, 54, 69, 0.3);
-    text-decoration: none;
-  }
-}
-
-.contacts__item {
-  margin-bottom: 28px;
-
-  @include media-width($tablet-width) {
-    margin-bottom: 50px;
-  }
-}
-
 .contacts__list {
   text-align: center;
 
@@ -64,6 +44,30 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+}
+
+.contacts__relations {
+  font-size: 24px;
+  text-align: center;
+  color: $pink;
+}
+
+.contacts__relations:hover {
+  color: $black;
+  text-decoration: underline;
+}
+
+.contacts__relations:active {
+  color: rgba(40, 54, 69, 0.3);
+  text-decoration: none;
+}
+
+.contacts__item {
+  margin-bottom: 28px;
+
+  @include media-width($tablet-width) {
+    margin-bottom: 50px;
   }
 }
 
@@ -77,4 +81,8 @@
   @include media-width($desktop-width) {
     order: 0;
   }
+}
+
+.contacts__image-map {
+  width: 100%;
 }

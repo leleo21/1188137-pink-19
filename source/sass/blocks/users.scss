@@ -1,10 +1,13 @@
 .users {
-  padding-bottom: 49px;
+  padding-bottom: 20px;
+
+  @include media-width($desktop-width) {
+    padding-bottom: 0;
+  }
 }
 
 .users__text-item {
-  padding-top: 56px;
-  padding-bottom: 56px;
+  padding: 45px 14px 49px 14px;
   text-align: center;
   font-size: 14px;
   line-height: 30px;
@@ -12,5 +15,10 @@
 
   @include media-width($tablet-width) {
     font-size: 18px;
+    padding: 93px 40px 76px 40px;
+  }
+
+  @include media-width($desktop-width) {
+    padding: 92px 150px 87px 150px;
   }
 }

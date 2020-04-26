@@ -6,19 +6,6 @@
   }
 }
 
-.input-list-contacts__text {
-  padding: 22px 21px 18px 21px;
-  border: 2px solid $lightgray;
-  font-size: 18px;
-  line-height: 30px;
-  color: $dark;
-  width: 100%;
-
-  @include media-width($tablet-width) {
-    margin-bottom: 21px;
-  }
-}
-
 .input-list-contacts__item {
   margin-bottom: 28px;
 
@@ -42,9 +29,15 @@
   padding-left: 21px;
 }
 
-.input-list-contacts__communication {
+.input-list-contacts__text {
+  padding: 22px 21px 18px 21px;
   border: 2px solid $lightgray;
-  padding: 22px 22px 18px 22px;
   font-size: 18px;
   line-height: 30px;
+  color: $dark;
+  width: 100%;
+
+  @include media-width($tablet-width) {
+    margin-bottom: 21px;
+  }
 }

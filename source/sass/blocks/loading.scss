@@ -1,7 +1,20 @@
-.loading__picture {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.loading {
+  @include media-width($tablet-width) {
+    margin-top: 28px;
+  }
+
+  @include media-width($desktop-width) {
+    margin-top: 8px;
+  }
+}
+
+.loading__list {
+  padding-bottom: 22px;
+  background-color: $gray;
+
+  @include media-width($desktop-width) {
+    background-color: $white;
+  }
 }
 
 .loading__text-item {
@@ -10,12 +23,34 @@
   color: $dark;
   text-align: center;
   background-color: $white;
-  padding-bottom: 48px;
+  padding-bottom: 41px;
 
   @include media-width($tablet-width) {
     font-size: 18px;
     padding-bottom: 72px;
   }
+}
+
+.loading__post {
+  padding-top: 20px;
+
+  @include media-width($tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 54px;
+    padding-top: 57px;
+  }
+
+  @include media-width($desktop-width) {
+    padding: 57px 60px 57px 80px;
+    background-color: $gray;
+  }
+}
+
+.loading__picture {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .loading__control {
@@ -52,6 +87,25 @@
   }
 }
 
+.loading__action {
+  padding-top: 38px;
+  background-color: trasnparent;
+  text-align: center;
+  border-top: 1px solid $dark;
+  margin-left: -20px;
+  margin-right: -20px;
+
+  @include media-width($tablet-width) {
+    border: none;
+    padding-top: 67px;
+    margin: 0;
+  }
+
+  @include media-width($desktop-width) {
+    padding-top: 146px;
+  }
+}
+
 .loading__button {
   display: block;
   border: 3px solid $dark;
@@ -74,50 +128,6 @@
   }
 }
 
-.loading__list {
-  padding-bottom: 22px;
-  background-color: $gray;
-
-  @include media-width($desktop-width) {
-    background-color: $white;
-  }
-}
-
-.loading__action {
-  padding-top: 38px;
-  background-color: trasnparent;
-  text-align: center;
-  border-top: 1px solid $dark;
-  margin-left: -20px;
-  margin-right: -20px;
-
-  @include media-width($tablet-width) {
-    border: none;
-    padding-top: 67px;
-    margin: 0;
-  }
-
-  @include media-width($desktop-width) {
-    padding-top: 146px;
-  }
-}
-
-.loading__post {
-  padding-top: 20px;
-
-  @include media-width($tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 54px;
-    padding-top: 57px;
-  }
-
-  @include media-width($desktop-width) {
-    padding: 57px 60px 57px 80px;
-    background-color: $gray;
-  }
-}
-
 .loading__button--upload {
   border-color: $pink;
   color: $pink;
@@ -128,29 +138,29 @@
     margin-right: 44px;
     margin-left: 104px;
   }
+}
 
-  &:hover {
-    background-color: $pink;
-    color: $white;
-  }
+.loading__button--upload:hover {
+  background-color: $pink;
+  color: $white;
+}
 
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-  }
+.loading__button--upload:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .loading__button--cancel {
   border-color: rgba(40, 54, 69, 0.1);
   color: rgba(40, 54, 69, 0.1);
+}
 
-  &:hover {
-    border-color: rgba(40, 54, 69, 0.3);
-    color: rgba(40, 54, 69, 0.3);
-  }
+.loading__button--cancel:hover {
+  border-color: rgba(40, 54, 69, 0.3);
+  color: rgba(40, 54, 69, 0.3);
+}
 
-  &:active {
-    background-color: rgba(40, 54, 69, 0.3);
-    color: rgba(255, 255, 255, 0.3);
-    border-color: rgba(40, 54, 69, 0.3);
-  }
+.loading__button--cancel:active {
+  background-color: rgba(40, 54, 69, 0.3);
+  color: rgba(255, 255, 255, 0.3);
+  border-color: rgba(40, 54, 69, 0.3);
 }

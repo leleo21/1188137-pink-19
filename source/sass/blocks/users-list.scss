@@ -6,15 +6,35 @@
   }
 }
 
-.users-list__info {
-  padding: 25px 13px 28px 17px;
+.users-list__item {
   margin-bottom: 20px;
+
+  @include media-width($tablet-width) {
+    width: calc((99.9% - 10px * 2) / 2);
+    margin-bottom: 20px;
+    background-color: $gray;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include media-width($desktop-width) {
+    width: calc((99.9% - 10px * 3) / 3);
+    margin-bottom: 54px;
+  }
+}
+
+.users-list__info {
   background-color: $gray;
+  padding: 19px 12px 17px 17px;
+
+  @include media-width($tablet-width) {
+    padding: 26px 21px 18px 28px;
+  }
 }
 
 .users-list__checkbox {
   width: 140px;
-  height: 31px;
+  height: 36px;
   background-color: $pink;
   color: $white;
   font-size: 12px;
@@ -22,29 +42,31 @@
   text-align: center;
   font-weight: bold;
   position: absolute;
+  text-transform: uppercase;
   top: 0;
-  right: 20px;
+  right: -1px;
   padding-top: 5px;
 
   @include media-width($tablet-width) {
-    top: 50px;
-  }
-}
-
-.users-list__item {
-  @include media-width($tablet-width) {
-    width: calc((99.9% - 10px * 4) / 2);
-    margin-bottom: 20px;
+    top: 58px;
+    right: 0;
   }
 
   @include media-width($desktop-width) {
-    width: calc((99.9% - 10px * 6) / 3);
+    top: 54px;
+    right: 2px;
   }
 }
 
 .users-list__picture {
   width: 100%;
 }
+
+// .users-list__picture--main {
+//   @include media-width($tablet-width) {
+//     height: 509px;
+//   }
+// }
 
 .users-list__image--main {
   margin-right: -20px;
@@ -59,4 +81,8 @@
 .users-list__item--main {
   width: 100%;
   position: relative;
+
+  @include media-width($tablet-width) {
+    margin-bottom: 48px;
+  }
 }
