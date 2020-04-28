@@ -11,26 +11,74 @@
 
   @include media-width($tablet-width) {
     display: flex;
+    padding-top: 61px;
   }
 
   @include media-width($desktop-width) {
     padding-top: 28px;
+    padding-bottom: 65px;
   }
 }
 
 .research__picture {
+  position: relative;
   margin-right: 70px;
+
+  @include media-width($tablet-width) {
+    margin-right: 69px;
+  }
 }
 
-.research__picture svg {
+.research__image {
   @include media-width($desktop-width) {
     width: 298px;
     height: 345px;
   }
 }
 
+.research__picture::before {
+  content: "";
+  position: absolute;
+  top: 56px;
+  right: 50%;
+  transform: translateX(50%);
+  width: 202px;
+  height: 202px;
+  border-radius: 50%;
+  border: 13px solid $pink;
+
+  @include media-width($desktop-width) {
+    width: 253px;
+    height: 253px;
+    top: 70px;
+    border-width: 16px;
+  }
+}
+
+.research__number {
+  content: "";
+  position: absolute;
+  font-size: 96px;
+  line-height: 149.5px;
+  font-weight: bold;
+  color: $pink;
+  top: 77px;
+  right: 50%;
+  transform: translateX(50%);
+
+  @include media-width($desktop-width) {
+    font-size: 120px;
+    line-height: 187px;
+    top: 99px;
+  }
+}
+
 .research__details {
   padding-top: 42px;
+
+  @include media-width($tablet-width) {
+    padding-top: 39px;
+  }
 
   @include media-width($desktop-width) {
     padding-top: 91px;
@@ -44,6 +92,11 @@
   text-align: left;
   margin-bottom: 13px;
   max-width: 250px;
+
+  @include media-width($tablet-width) {
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
 
   @include media-width($desktop-width) {
     max-width: none;
