@@ -1,10 +1,18 @@
 .button-toggle {
-  margin-bottom: 40px;
+  margin-bottom: 34px;
 }
 
 .button-toggle__wrapper {
   @include media-width($tablet-width) {
+    display: flex;
+    justify-content: space-between;
     border-bottom: 1px solid $dark;
+    min-width: 274px;
+    align-items: center;
+  }
+
+  @include media-width($desktop-width) {
+    width: 410px;
   }
 }
 
@@ -14,12 +22,79 @@
   padding: 0;
 
   @include media-width($tablet-width) {
-    margin-right: 200px;
-    margin-bottom: 24px;
+    margin-left: 4px;
+    margin-bottom: 23px;
     margin-top: 24px;
   }
 
   @include media-width($desktop-width) {
-    margin-right: 300px;
+    margin-left: 0;
+    margin-bottom: 12px;
+    margin-top: 15px;
+  }
+}
+
+.button-toggle__slider {
+  @include media-width($tablet-width) {
+    position: relative;
+    width: 202px;
+    height: 2px;
+    background-color: $dark;
+    margin-right: 18px;
+  }
+
+  @include media-width($desktop-width) {
+    width: 289px;
+    margin-right: 30px;
+  }
+}
+
+.button-toggle__switch {
+  @include media-width($tablet-width) {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 2px solid $pink;
+    border-radius: 50%;
+    top: -6px;
+    left: 92px;
+    background-color: $gray;
+  }
+}
+
+.button-toggle__image-crop {
+  @include media-width($tablet-width) {
+    width: 22px;
+    height: 22px;
+  }
+
+  @include media-width($desktop-width) {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.button-toggle__image-fill {
+  @include media-width($tablet-width) {
+    width: 24px;
+    height: 22px;
+  }
+
+  @include media-width($desktop-width) {
+    width: 48px;
+    height: 43px;
+  }
+}
+
+.button-toggle__image-contrast {
+  @include media-width($tablet-width) {
+    width: 16px;
+    height: 16px;
+  }
+
+  @include media-width($desktop-width) {
+    width: 32px;
+    height: 32px;
   }
 }

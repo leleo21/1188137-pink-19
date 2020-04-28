@@ -1,4 +1,9 @@
-.input-list-contacts {
+.input-list-contacts__catalog {
+  @include media-width($tablet-width) {
+    padding-left: 58px;
+    padding-right: 58px;
+  }
+
   @include media-width($desktop-width) {
     display: flex;
     width: 100%;
@@ -7,37 +12,84 @@
 }
 
 .input-list-contacts__item {
-  margin-bottom: 28px;
+  margin-bottom: 16px;
 
   @include media-width($tablet-width) {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column-reverse;
-    padding-left: 60px;
-    padding-right: 60px;
+    margin-bottom: 29px;
   }
 
   @include media-width($desktop-width) {
-    margin-bottom: 20px;
+    margin-bottom: 14px;
+    min-width: 373px;
+  }
+}
+
+.input-list-contacts__item:last-child {
+  @include media-width($tablet-width) {
+    margin-bottom: 14px;
+  }
+
+  @include media-width($desktop-width) {
+    margin-left: 73px;
   }
 }
 
 .input-list-contacts__label {
+  display: inline-block;
+  vertical-align: top;
   font-size: 14px;
   line-height: 30px;
   color: $pink;
-  padding-left: 21px;
+  text-transform: uppercase;
+  margin-left: 21px;
+  margin-bottom: 5px;
+
+  @include media-width($tablet-width) {
+    margin: 0;
+    margin-left: 18px;
+  }
 }
 
 .input-list-contacts__text {
-  padding: 22px 21px 18px 21px;
-  border: 2px solid $lightgray;
   font-size: 18px;
   line-height: 30px;
+  text-align: left;
+  padding: 15px 21px 15px 21px;
+  border: 2px solid $lightgray;
   color: $dark;
   width: 100%;
 
   @include media-width($tablet-width) {
-    margin-bottom: 21px;
+    margin-bottom: 9px;
+    padding: 15px 77px 15px 17px;
   }
+}
+
+.input-list-contacts__field {
+  position: relative;
+}
+
+.input-list-contacts__image {
+  display: none;
+  position: absolute;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: $gray;
+  width: 60px;
+  height: 60px;
+  top: 2px;
+  right: 2px;
+
+  @include media-width($tablet-width) {
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+.input-list-contacts__image--email {
+  background-image: url("../img/icon-mail.svg");
 }

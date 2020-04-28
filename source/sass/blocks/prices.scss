@@ -3,17 +3,27 @@
   padding-top: 89px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 51px;
+  padding-bottom: 40px;
 
   @include media-width($tablet-width) {
-    padding-bottom: 22px;
+    padding-top: 86px;
+    padding-bottom: 35px;
+  }
+
+  @include media-width($desktop-width) {
+    padding-top: 146px;
+    padding-bottom: 96px;
   }
 }
 
 .prices__table {
   width: 100%;
-  margin-bottom: 45px;
+  margin-bottom: 34px;
   text-transform: uppercase;
+
+  @include media-width($desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .prices__heading {
@@ -34,8 +44,8 @@
 
   @include media-width($desktop-width) {
     font-size: 18px;
-    padding-top: 23px;
-    padding-bottom: 12px;
+    padding-top: 16px;
+    padding-bottom: 1px;
   }
 }
 
@@ -65,19 +75,18 @@
   background-color: $white;
   text-align: left;
   font-weight: 300;
-  padding: 10px 20px 10px 24px;
+  padding: 13px 20px 13px 21px;
 
   @include media-width($tablet-width) {
     display: table-cell;
     text-transform: capitalize;
-    padding: 0;
-    padding-left: 15px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding: 7px 15px 7px 15px;
   }
 
   @include media-width($desktop-width) {
+    font-size: 18px;
     text-align: left;
+    padding: 14px 20px 15px 20px;
   }
 }
 
@@ -90,6 +99,7 @@
 
   @include media-width($tablet-width) {
     display: table-cell;
+    padding: 0;
   }
 }
 
@@ -119,5 +129,31 @@
 
   @include media-width($tablet-width) {
     display: table-cell;
+  }
+}
+
+.prices__heading--hit {
+  position: relative;
+}
+
+.prices__heading--hit::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/bg-hit.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  width: 100%;
+  height: 72px;
+  top: 0;
+  left: 0;
+
+  @include media-width($tablet-width) {
+    background-image: url("../img/bg-hit-tablet.svg");
+    height: 61px;
+    width: 61px;
+  }
+
+  @include media-width($desktop-width) {
+    height: 173px;
   }
 }

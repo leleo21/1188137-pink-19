@@ -1,13 +1,51 @@
+.radio-list {
+  @include media-width($tablet-width) {
+    margin-bottom: 56px;
+  }
+
+  @include media-width($desktop-width) {
+    margin-bottom: 53px;
+  }
+}
+
 .radio-list__label {
+  display: flex;
   font-size: 18px;
   line-height: 30px;
+  align-items: center;
   color: $dark;
+  cursor: pointer;
+}
+
+.radio-list__label::before {
+  content: "";
+  width: 37px;
+  height: 37px;
+  margin-right: 32px;
+  border-radius: 50%;
+  border: 2px solid $lightgray;
+  background-color: $white;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  @include media-width($tablet-width) {
+    margin-right: 22px;
+  }
+
+  @include media-width($desktop-width) {
+    margin-left: 13px;
+  }
+}
+
+.radio-list__input:checked + .radio-list__label::before {
+  background-image: url("../img/icon-map-marker.svg");
 }
 
 .radio-list__input {
-  margin-right: 33px;
+  position: absolute;
+  opacity: 0;
 }
 
 .radio-list__item {
-  margin-bottom: 39px;
+  margin-bottom: 38px;
 }

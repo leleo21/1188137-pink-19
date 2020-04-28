@@ -45,6 +45,7 @@
   background-color: transparent;
   padding: 0;
   margin-right: 15px;
+  cursor: pointer;
 
   @include media-width($tablet-width) {
     margin-right: 10px;

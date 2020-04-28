@@ -41,10 +41,10 @@
         <div class="container">
           <form class="form" action="https://echo.htmlacademy.ru">
             <div class="form__chapter">
-              <p class="form__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-              <p class="form__text form__text--hidden">Пожалуйста, заполните форму ниже:</p>
+              <p class="form__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="form__text-hidden">Пожалуйста, заполните форму ниже:</span></p>
             </div>
             <fieldset class="form__main-item input-list">
+              <legend class="visually-hidden"> Введите Ф.И.О.</legend>
               <ul class="input-list">
                 <li class="input-list__item">
                   <label class="input-list__label" for="lastname">Фамилия:</label>
@@ -61,7 +61,7 @@
               </ul>
             </fieldset>
             <fieldset class="form__progress checkbox-list">
-              <legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
+              <legend class="form__title form__title--progress">Ваши безбашенные достижения в путешествии</legend>
               <ul class="checkbox-list">
                 <li class="checkbox-list__item">
                   <input class="checkbox-list__input" type="checkbox" id="checkbox1" name="checkbox1" checked>
@@ -91,19 +91,25 @@
             </fieldset>
             <fieldset class="form__contacts input-list-contacts">
               <legend class="form__title form__title--contact">Контактная информация</legend>
-              <ul class="input-list-contacts">
+              <ul class="input-list-contacts__catalog">
                 <li class="input-list-contacts__item">
                   <label class="input-list-contacts__label" for="phone">Номер телефона</label>
-                  <input class="input-list-contacts__text" type="text" id="phone" name="phone" placeholder="Номер, пожалуйста">
+                  <div class="input-list-contacts__field">
+                    <div class="input-list-contacts__image"></div>
+                    <input class="input-list-contacts__text" type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста">
+                  </div>
                 </li>
                 <li class="input-list-contacts__item">
                   <label class="input-list-contacts__label" for="email">Адрес почты</label>
-                  <input class="input-list-contacts__text" type="email" id="email" name="email" placeholder="Введите почту *">
+                  <div class="input-list-contacts__field">
+                    <div class="input-list-contacts__image input-list-contacts__image--email"></div>
+                    <input class="input-list-contacts__text" type="email" id="email" name="email" placeholder="Введите почту *">
+                  </div>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="form__platform radio-list">
-              <legend class="form__title">С каким приложением путешествовали?</legend>
+              <legend class="form__title form__title--platform">С каким приложением путешествовали?</legend>
               <ul class="radio-list">
                 <li class="radio-list__item">
                   <input class="radio-list__input" type="radio" id="radio1" name="radio" checked>
@@ -120,14 +126,16 @@
               </ul>
             </fieldset>
             <fieldset class="form__description textarea-list">
-              <legend class="form__title">Опишите свои эмоции</legend>
+              <legend class="form__title form__title--description">Опишите свои эмоции</legend>
               <div class="textarea-list">
                 <textarea class="textarea-list__text" name="text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               </div>
             </fieldset>
             <div class="form__dispatch">
-              <button class="form__button" type="submit">Отправить форму</button>
-              <p class="form__mandatory"><span class="form__note">*</span> — обязательные поля</p>
+              <div class="form__push-button">
+                <button class="form__button" type="submit">Отправить форму</button>
+              </div>
+              <p class="form__mandatory"><span class="form__note">*</span> — обязательные<span class="form__extra-text">для заполнения</span>поля</p>
             </div>
           </form>
         </div>

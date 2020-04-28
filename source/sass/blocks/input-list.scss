@@ -1,28 +1,40 @@
 .input-list__item {
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 
   @include media-width($tablet-width) {
-    margin-bottom: 56px;
+    margin-bottom: 50px;
     display: flex;
     align-items: center;
   }
+
+  @include media-width($desktop-width) {
+    margin-bottom: 51px;
+  }
+}
+
+.input-list__item:last-child {
+  margin-bottom: 0;
 }
 
 .input-list__label {
-  padding-left: 23px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 23px;
+  margin-bottom: 4px;
   text-transform: uppercase;
 
   @include media-width($tablet-width) {
-    padding-left: 0;
-    padding-right: 22px;
+    margin: 0;
+    margin-right: 18px;
   }
 }
 
 .input-list__text {
-  padding: 22px 21px 18px 21px;
-  border: 2px solid $lightgray;
   font-size: 18px;
   line-height: 30px;
+  text-align: left;
+  padding: 17px 20px 14px 20px;
+  border: 2px solid $lightgray;
   color: $dark;
   width: 100%;
 }
