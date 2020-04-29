@@ -157,3 +157,18 @@
     height: 173px;
   }
 }
+
+.prices__hit {
+  position: absolute;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 300;
+  color: $white;
+  top: 17px;
+  left: 9px;
+  transform: rotate(-45deg);
+
+  @include media-width($tablet-width) {
+    top: 9px;
+  }
+}
