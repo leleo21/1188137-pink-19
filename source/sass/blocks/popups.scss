@@ -2,7 +2,7 @@
   display: none;
   width: 100%;
   padding-top: 40px;
-  box-shadow:  0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
 
   @include media-width($tablet-width) {
     max-width: 460px;
