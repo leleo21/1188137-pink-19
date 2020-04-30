@@ -1,0 +1,134 @@
+.popup {
+  display: none;
+  width: 100%;
+  padding-top: 40px;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+
+  @include media-width($tablet-width) {
+    max-width: 460px;
+    padding-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2%;
+  }
+
+  @include media-width($desktop-width) {
+    max-width: 780px;
+    padding-top: 40px;
+  }
+}
+
+.popup__top {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 38px;
+
+  @include media-width($tablet-width) {
+    padding-right: 75px;
+    padding-left: 75px;
+  }
+
+  @include media-width($desktop-width) {
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-bottom: 64px;
+  }
+}
+
+.popup__title {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 26px;
+
+  @include media-width($tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 21px;
+  }
+
+  @include media-width($desktop-width) {
+    padding: 0;
+  }
+}
+
+.popup__text {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: $dark;
+
+  @include media-width($tablet-width) {
+    font-size: 18px;
+  }
+}
+
+.popup__action {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 49px;
+
+  @include media-width($desktop-width) {
+    padding-top: 47px;
+    padding-bottom: 53px;
+    background-color: $gray;
+  }
+}
+
+.popup__fliud {
+  @include media-width($tablet-width) {
+    max-width: 296px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.popup__button {
+  width: 100%;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 17px 20px 17px 20px;
+  background-color: $green;
+  color: $white;
+  border-radius: 2%;
+  border: none;
+  cursor: pointer;
+}
+
+.popup--send {
+  padding-bottom: 0;
+}
+
+.popup__top--send {
+  margin-bottom: 31px;
+
+  @include media-width($tablet-width) {
+    margin-bottom: 35px;
+  }
+
+  @include media-width($desktop-width) {
+    padding-left: 160px;
+    padding-right: 160px;
+    margin-bottom: 40px;
+  }
+}
+
+.popup__action--send {
+  padding-top: 48px;
+  padding-bottom: 51px;
+  background-color: $gray;
+
+  @include media-width($desktop-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.popup__fliud--send {
+  @include media-width($desktop-width) {
+    max-width: 456px;
+  }
+}
