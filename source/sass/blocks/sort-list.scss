@@ -1,5 +1,6 @@
 .sort-list {
-  padding-bottom: 5px;
+  padding-bottom: 8px;
+  z-index: 1;
 
   @include media-width($desktop-width) {
     display: flex;

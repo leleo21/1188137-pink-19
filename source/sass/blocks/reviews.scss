@@ -1,22 +1,19 @@
 .reviews {
   padding-top: 42px;
-  padding-bottom: 35px;
 
   @include media-width($tablet-width) {
     padding-top: 28px;
-    padding-bottom: 13px;
   }
 }
 
 .reviews__quotes {
   display: none;
   margin-top: 48px;
-  margin-bottom: 58px;
+  margin-bottom: 43px;
   text-align: center;
 
   @include media-width($desktop-width) {
     display: block;
-    margin-bottom: 43px;
   }
 }
 
@@ -94,10 +91,11 @@
 
 .reviews__arrow {
   display: none;
+  margin-top: 10px;
+  fill: $gray;
 
   @include media-width($desktop-width) {
     display: inline-block;
-    margin-top: 10px;
   }
 }
 
@@ -105,4 +103,8 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+.reviews__quotes-image {
+  fill: $gray;
 }

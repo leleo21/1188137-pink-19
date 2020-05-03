@@ -1,4 +1,5 @@
 .advantage {
+  position: relative;
   background-color: $gray;
 
   .advantage__wrapper {
@@ -9,11 +10,11 @@
 }
 
 .advantage__list {
-  padding-top: 82px;
+  padding-top: 112px;
   padding-bottom: 41px;
 
   @include media-width($tablet-width) {
-    padding-top: 72px;
+    padding-top: 95px;
     padding-bottom: 6px;
   }
 
@@ -28,8 +29,10 @@
 
   @include media-width($tablet-width) {
     order: -1;
+    margin-top: 25px;
     margin-right: 40px;
     overflow: inherit;
+    z-index: 1;
   }
 
   @include media-width($desktop-width) {
@@ -48,4 +51,18 @@
     max-width: none;
     margin-bottom: 0;
   }
+}
+
+.advantage::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 100%;
+  padding-top: 10.5%;
+  right: 50%;
+  transform: translateX(50%);
+  top: 0;
+  z-index: 0;
 }

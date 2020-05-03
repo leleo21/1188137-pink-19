@@ -24,9 +24,13 @@
 }
 
 .social__link:active {
-  border-color: rgba(40, 54, 69, 0.3);
+  border-color: rgba(40, 54, 69, 0.1);
 }
 
-.social__link:active path {
+.social__link:active .social__image {
   opacity: 0.3;
+}
+
+.social__image {
+  fill: $pink;
 }
