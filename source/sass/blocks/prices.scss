@@ -1,12 +1,13 @@
 .prices {
+  position: relative;
   background-color: $gray;
-  padding-top: 89px;
+  padding-top: 125px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 40px;
 
   @include media-width($tablet-width) {
-    padding-top: 86px;
+    padding-top: 99px;
     padding-bottom: 35px;
   }
 
@@ -170,5 +171,22 @@
 
   @include media-width($tablet-width) {
     top: 9px;
+  }
+}
+
+.prices::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 100%;
+  height: 94px;
+  right: 50%;
+  transform: translateX(50%);
+  top: 0;
+
+  @include media-width($tablet-width) {
+    top: -5px;
   }
 }

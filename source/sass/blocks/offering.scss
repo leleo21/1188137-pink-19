@@ -17,11 +17,11 @@
 
 .offering__motto {
   padding-top: 42px;
-  padding-bottom: 36px;
+  padding-bottom: 5px;
 
   @include media-width($tablet-width) {
     padding-top: 48px;
-    padding-bottom: 43px;
+    padding-bottom: 22px;
   }
 
   @include media-width($desktop-width) {

@@ -11,7 +11,7 @@
 
   @include media-width($tablet-width) {
     display: flex;
-    padding-top: 61px;
+    padding-top: 55px;
   }
 
   @include media-width($desktop-width) {
@@ -30,6 +30,8 @@
 }
 
 .research__image {
+  fill: $lightgray;
+
   @include media-width($desktop-width) {
     width: 298px;
     height: 345px;
