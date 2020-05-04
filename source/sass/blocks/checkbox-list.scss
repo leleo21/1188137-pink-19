@@ -83,6 +83,14 @@
   }
 }
 
+.checkbox-list__label:hover::before {
+  border-color: $dark;
+}
+
+.checkbox-list__label:active::before {
+  border-color: $pink;
+}
+
 .checkbox-list__input {
   position: absolute;
   opacity: 0;

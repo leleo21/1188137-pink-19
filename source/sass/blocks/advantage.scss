@@ -29,7 +29,7 @@
 
   @include media-width($tablet-width) {
     order: -1;
-    margin-top: 25px;
+    margin-top: 50px;
     margin-right: 40px;
     overflow: inherit;
     z-index: 1;
@@ -60,9 +60,8 @@
   background-repeat: no-repeat;
   background-position: center top;
   width: 100%;
-  padding-top: 10.5%;
+  height: 94px;
   right: 50%;
   transform: translateX(50%);
   top: 0;
-  z-index: 0;
 }

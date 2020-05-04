@@ -60,7 +60,12 @@
     top: -6px;
     left: 92px;
     background-color: $gray;
+    cursor: pointer;
   }
+}
+
+.button-toggle__switch:active {
+  background-color: $pink;
 }
 
 .button-toggle__image-crop {
@@ -97,4 +102,18 @@
     width: 32px;
     height: 32px;
   }
+}
+
+.button-toggle__image {
+  fill: $dark;
+  opacity: 0.3;
+}
+
+.button-toggle__image:hover {
+  opacity: 0.5;
+}
+
+.button-toggle__image:active {
+  fill: $pink;
+  opacity: 1;
 }
