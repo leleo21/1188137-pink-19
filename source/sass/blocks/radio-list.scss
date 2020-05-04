@@ -37,6 +37,14 @@
   }
 }
 
+.radio-list__label:hover::before {
+  border-color: $dark;
+}
+
+.radio-list__label:active::before {
+  border-color: $pink;
+}
+
 .radio-list__input:checked + .radio-list__label::before {
   background-image: url("../img/icon-map-marker.svg");
 }

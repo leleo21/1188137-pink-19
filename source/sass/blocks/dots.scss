@@ -49,6 +49,19 @@
   background-color: transparent;
 }
 
+.dots__button:hover {
+  opacity: 0.6;
+}
+
+.dots__button:active {
+  opacity: 0.1;
+}
+
+.dots__button--active:active,
+.dots__button--active:hover {
+  opacity: 1;
+}
+
 .dots--prices {
   @include media-width($tablet-width) {
     display: none;

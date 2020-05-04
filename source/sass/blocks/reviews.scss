@@ -92,11 +92,20 @@
 .reviews__arrow {
   display: none;
   margin-top: 10px;
-  fill: $gray;
+  fill: $dark;
+  opacity: 0.3;
 
   @include media-width($desktop-width) {
     display: inline-block;
   }
+}
+
+.reviews__arrow:hover {
+  opacity: 0.6;
+}
+
+.reviews__arrow:active {
+  opacity: 0.1;
 }
 
 .reviews__button {

@@ -75,7 +75,7 @@
   color: $dark;
   background-color: $white;
   text-align: left;
-  font-weight: 300;
+  font-weight: normal;
   padding: 13px 20px 13px 21px;
 
   @include media-width($tablet-width) {
@@ -146,12 +146,13 @@
   width: 100%;
   height: 72px;
   top: 0;
-  left: 0;
+  left: -2px;
 
   @include media-width($tablet-width) {
     background-image: url("../img/bg-hit-tablet.svg");
     height: 61px;
     width: 61px;
+    left: 0;
   }
 
   @include media-width($desktop-width) {
@@ -189,4 +190,12 @@
   @include media-width($tablet-width) {
     top: -5px;
   }
+}
+
+.prices__yes {
+  fill: $lightgreen;
+}
+
+.prices__no {
+  fill: $yellow;
 }

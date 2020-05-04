@@ -116,6 +116,11 @@
   top: -6px;
   left: 192px;
   background-color: $gray;
+  cursor: pointer;
+}
+
+.loading__slider__switch:active {
+  background-color: $pink;
 }
 
 .loading__action {
@@ -194,5 +199,5 @@
 .loading__button--cancel:active {
   background-color: rgba(40, 54, 69, 0.3);
   color: rgba(255, 255, 255, 0.3);
-  border-color: rgba(40, 54, 69, 0.3);
+  border-color: transparent;
 }
