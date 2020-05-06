@@ -110,10 +110,30 @@
 
 .contacts__image-map {
   width: 100%;
+  position: absolute;
+  bottom: -3px;
+
+  @include media-width($tablet-width) {
+    bottom: -109px;
+  }
+
+  @include media-width($desktop-width) {
+    bottom: -198px;
+  }
 }
 
 .contacts__map {
   position: relative;
+  height: 195px;
+  overflow: hidden;
+
+  @include media-width($tablet-width) {
+    height: 373px;
+  }
+
+  @include media-width($desktop-width) {
+    height: 522px;
+  }
 }
 
 .contacts__map::before {
@@ -127,4 +147,5 @@
   transform: translateX(50%);
   width: 100%;
   padding-top: 10.5%;
+  z-index: 1;
 }
