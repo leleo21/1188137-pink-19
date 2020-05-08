@@ -16,23 +16,19 @@
       <div class="header__wrapper">
         <div class="header__top">
           <a class="header__logo" href="#" aria-label="Логотип сайта Pink">
-            <svg class="header__image header__image--mobile" width="75" height="22">
-              <use xlink:href="#logo-pink-white-mobile" />
-            </svg>
-            <svg class="header__image header__image--tablet" width="147" height="40">
-              <use xlink:href="#logo-pink-white-tablet" />
-            </svg>
-            <svg class="header__image header__image--desktop" width="147" height="40">
-              <use xlink:href="#logo-pink-white-desktop" />
-            </svg>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img  class="header__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип сайта Pink">
+            </picture>
           </a>
           <button class="header__toggle header__toggle--nojs" type="button"><span>Изменение кнопки в меню</span></button>
         </div>
         <nav class="main-nav main-nav--nojs">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="#" class="main-nav__link main-nav__link--active">Главная</a></li>
-            <li class="main-nav__item"><a href="#" class="main-nav__link">Фотографии</a></li>
-            <li class="main-nav__item"><a href="#" class="main-nav__link">Конкурс</a></li>
+            <li class="main-nav__item"><a href="index.html" class="main-nav__link">Главная</a></li>
+            <li class="main-nav__item"><a href="photo.html" class="main-nav__link main-nav__link--active">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html" class="main-nav__link">Конкурс</a></li>
             <li class="main-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__link">HTML Academy</a></li>
           </ul>
         </nav>
@@ -318,12 +314,10 @@
                                                                                         <div class="footer__advertising">
                                                                                           <div class="footer__link">
                                                                                             <a class="footer__logo" href="#" aria-label="Логотип сайта Pink">
-                                                                                              <svg class="footer__image" width="147" height="40">
-                                                                                                <use xlink:href="#logo-pink-blue-mobile" />
-                                                                                              </svg>
-                                                                                              <svg class="footer__image footer__image--desktop" width="147" height="40">
-                                                                                                <use xlink:href="#logo-pink-blue-desktop" />
-                                                                                              </svg>
+                                                                                              <picture>
+                                                                                                <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+                                                                                                <img  class="footer__image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип сайта Pink">
+                                                                                              </picture>
                                                                                             </a>
                                                                                           </div>
                                                                                           <ul class="footer__social social">

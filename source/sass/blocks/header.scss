@@ -105,31 +105,9 @@
 }
 
 .header__image {
-  display: none;
-  fill: $white;
-}
-
-.header__image--mobile {
-  display: inline-block;
-
   @include media-width($tablet-width) {
-    display: none;
-  }
-}
-
-.header__image--tablet {
-  @include media-width($tablet-width) {
-    display: inline-block;
-  }
-
-  @include media-width($desktop-width) {
-    display: none;
-  }
-}
-
-.header__image--desktop {
-  @include media-width($desktop-width) {
-    display: inline-block;
+    width: 147px;
+    height: 40px;
   }
 }
 
