@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="preload" href="fonts\opensans.woff2" as="font">
   <link href="css/style.min.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 </head>
@@ -15,11 +16,15 @@
       <div class="header__wrapper">
         <div class="header__top">
           <a class="header__logo" href="#" aria-label="Логотип сайта Pink">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-              <img  class="header__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип сайта Pink">
-            </picture>
+            <svg class="header__image header__image--mobile" width="75" height="22">
+              <use xlink:href="#logo-pink-white-mobile" />
+            </svg>
+            <svg class="header__image header__image--tablet" width="147" height="40">
+              <use xlink:href="#logo-pink-white-tablet" />
+            </svg>
+            <svg class="header__image header__image--desktop" width="147" height="40">
+              <use xlink:href="#logo-pink-white-desktop" />
+            </svg>
           </a>
           <button class="header__toggle header__toggle--nojs" type="button"><span>Изменение кнопки в меню</span></button>
         </div>
@@ -149,10 +154,12 @@
       <div class="footer__advertising">
         <div class="footer__link">
           <a class="footer__logo" href="#" aria-label="Логотип сайта Pink">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
-              <img  class="footer__image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип сайта Pink">
-            </picture>
+            <svg class="footer__image" width="147" height="40">
+              <use xlink:href="#logo-pink-blue-mobile" />
+            </svg>
+            <svg class="footer__image footer__image--desktop" width="147" height="40">
+              <use xlink:href="#logo-pink-blue-desktop" />
+            </svg>
           </a>
         </div>
         <ul class="footer__social social">
@@ -211,6 +218,7 @@
       </div>
     </div>
   </div>
+  <script src="js/picturefill.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

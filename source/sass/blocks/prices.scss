@@ -1,18 +1,18 @@
 .prices {
   position: relative;
   background-color: $gray;
-  padding-top: 125px;
+  padding-top: 90px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 40px;
 
   @include media-width($tablet-width) {
-    padding-top: 99px;
+    padding-top: 84px;
     padding-bottom: 35px;
   }
 
   @include media-width($desktop-width) {
-    padding-top: 146px;
+    padding-top: 154px;
     padding-bottom: 96px;
   }
 }
@@ -182,20 +182,10 @@
   background-repeat: no-repeat;
   background-position: center top;
   width: 100%;
-  height: 94px;
-  right: 50%;
-  transform: translateX(50%);
-  top: 0;
-
-  @include media-width($tablet-width) {
-    top: -5px;
-  }
+  padding-top: 8%;
+  top: -1px;
 }
 
 .prices__yes {
-  fill: $lightgreen;
-}
-
-.prices__choice svg {
   fill: $lightgreen;
 }

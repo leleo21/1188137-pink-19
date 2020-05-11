@@ -85,6 +85,10 @@
 .footer__image {
   margin-left: auto;
   margin-right: auto;
+
+  @include media-width($desktop-width) {
+    display: none;
+  }
 }
 
 .footer__image:hover {
@@ -101,5 +105,13 @@
 
   @include media-width($tablet-width) {
     display: block;
+  }
+}
+
+.footer__image--desktop {
+  display: none;
+
+  @include media-width($desktop-width) {
+    display: inline-block;
   }
 }

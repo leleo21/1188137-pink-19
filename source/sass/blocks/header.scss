@@ -1,11 +1,9 @@
 .header {
-  background-color: $black;
+  background-color: $dark;
   padding-top: 22px;
-  padding-bottom: 22px;
 
   @include media-width($tablet-width) {
     padding-top: 26px;
-    padding-bottom: 43px;
   }
 
   .header__wrapper {
@@ -13,6 +11,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      padding-bottom: 41px;
     }
   }
 }
@@ -22,10 +21,15 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-
+  padding-bottom: 22px;
 
   @include media-width($tablet-width) {
     align-items: flex-end;
+    padding-bottom: 43px;
+  }
+
+  @include media-width($desktop-width) {
+    padding-bottom: 0;
   }
 }
 
@@ -105,9 +109,31 @@
 }
 
 .header__image {
+  display: none;
+  fill: $white;
+}
+
+.header__image--mobile {
+  display: inline-block;
+
   @include media-width($tablet-width) {
-    width: 147px;
-    height: 40px;
+    display: none;
+  }
+}
+
+.header__image--tablet {
+  @include media-width($tablet-width) {
+    display: inline-block;
+  }
+
+  @include media-width($desktop-width) {
+    display: none;
+  }
+}
+
+.header__image--desktop {
+  @include media-width($desktop-width) {
+    display: inline-block;
   }
 }
 

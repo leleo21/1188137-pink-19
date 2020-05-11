@@ -5,6 +5,7 @@
   @include media-width($desktop-width) {
     display: block;
     width: auto;
+    padding-top: 11px;
   }
 }
 
@@ -20,7 +21,7 @@
 
 .main-nav__item {
   text-transform: uppercase;
-  border-bottom: 1px solid $dark;
+  border-bottom: 1px solid $black;
   text-align: center;
 
   @include media-width($desktop-width) {
@@ -31,7 +32,7 @@
 }
 
 .main-nav__item:first-child {
-  border-top: 1px solid $dark;
+  border-top: 1px solid $black;
 
   @include media-width($desktop-width) {
     border-top: none;

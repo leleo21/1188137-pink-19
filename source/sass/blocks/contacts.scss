@@ -112,6 +112,7 @@
   width: 100%;
   position: absolute;
   bottom: -3px;
+  z-index: -1;
 
   @include media-width($tablet-width) {
     bottom: -109px;
@@ -126,6 +127,7 @@
   position: relative;
   height: 195px;
   overflow: hidden;
+  z-index: 0;
 
   @include media-width($tablet-width) {
     height: 373px;

@@ -1,8 +1,14 @@
 .reviews {
   padding-top: 42px;
+  padding-bottom: 34px;
 
   @include media-width($tablet-width) {
     padding-top: 28px;
+    padding-bottom: 16px;
+  }
+
+  @include media-width($desktop-width) {
+    padding-bottom: 6px;
   }
 }
 
@@ -14,6 +20,7 @@
 
   @include media-width($desktop-width) {
     display: block;
+    margin-top: 41px;
   }
 }
 
@@ -91,7 +98,7 @@
 
 .reviews__arrow {
   display: none;
-  margin-top: 10px;
+  margin-top: 5px;
   fill: $dark;
   opacity: 0.3;
 
