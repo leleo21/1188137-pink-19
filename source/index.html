@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="preload" href="fonts\opensans.woff2" as="font">
   <link href="css/style.min.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 </head>
@@ -29,9 +30,9 @@
         </div>
         <nav class="main-nav main-nav--nojs">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="#" class="main-nav__link main-nav__link--active">Главная</a></li>
-            <li class="main-nav__item"><a href="#" class="main-nav__link">Фотографии</a></li>
-            <li class="main-nav__item"><a href="#" class="main-nav__link">Конкурс</a></li>
+            <li class="main-nav__item"><a href="index.html" class="main-nav__link main-nav__link--active">Главная</a></li>
+            <li class="main-nav__item"><a href="photo.html" class="main-nav__link">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html" class="main-nav__link">Конкурс</a></li>
             <li class="main-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__link">HTML Academy</a></li>
           </ul>
         </nav>
@@ -168,7 +169,7 @@
                           <div class="reviews__arrow">
                             <button class="reviews__button" type = "button">
                               <svg class="reviews__arrow" width="22" height="42">
-                                <use xlink:href="#icon-review-arrow-right" />
+                                <use xlink:href="#icon-review-arrow-left" />
                               </svg>
                             </button>
                           </div>
@@ -176,7 +177,7 @@
                           <div class="reviews__arrow">
                             <button class="reviews__button" type = "button">
                               <svg class="reviews__arrow" width="22" height="42">
-                                <use xlink:href="#icon-review-arrow-left" />
+                                <use xlink:href="#icon-review-arrow-right" />
                               </svg>
                             </button>
                           </div>
@@ -327,7 +328,10 @@
             </li>
           </ul>
         </div>
+
         <div class="contacts__map">
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A46524ab5c0e9ed8c0828eb8c8a87dfcfd3088ea2a87a2ad16cc767250c17b7d8&amp;source=constructor"
+                  width="100%" height="550" frameborder="0"></iframe>
           <picture>
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/bg-map-desktop_1x.webp 1x, img/webp/webp/bg-map-desktop_2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/bg-map-tablet_1x.webp 1x, img/webp/bg-map-tablet_2x.webp 2x">
@@ -387,6 +391,7 @@
                     </div>
                   </div>
                 </footer>
+                <script src="js/picturefill.js"></script>
                 <script src="js/main.js"></script>
               </body>
               </html>

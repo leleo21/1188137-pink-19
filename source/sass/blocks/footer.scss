@@ -26,7 +26,7 @@
 }
 
 .footer__social {
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 
   @include media-width($tablet-width) {
     margin-right: 17px;
@@ -50,6 +50,7 @@
   line-height: 18px;
   text-align: left;
   color: $dark;
+  margin-right: 15px;
 
   @include media-width($tablet-width) {
     margin-bottom: 10px;
@@ -62,6 +63,10 @@
 
 .footer__htmlacademy {
   padding-top: 5px;
+
+  @include media-width($tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .footer__htmlacademy-image {
@@ -78,6 +83,9 @@
 }
 
 .footer__image {
+  margin-left: auto;
+  margin-right: auto;
+
   @include media-width($desktop-width) {
     display: none;
   }
@@ -87,7 +95,7 @@
   fill: $pink;
 }
 
-.footer__logo:active svg {
+.footer__image:active {
   fill: $black;
   opacity: 0.3;
 }
