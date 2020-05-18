@@ -7,7 +7,7 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top -113px center;
+  background-position: top center;
   background-color: $black;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -17,15 +17,17 @@
 
   @include media-width($tablet-width) {
     background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: top center;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
-      background-size: 1200px auto;
+      background-size: 960px auto;
     }
   }
 
   @include media-width($desktop-width) {
     background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: top center;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
@@ -39,38 +41,40 @@
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
-  padding-top: 27px;
+  padding-top: 96px;
   text-align: center;
-  padding-bottom: 53px;
+  padding-bottom: 51px;
+  margin-top: -67px;
 
   @include media-width($tablet-width) {
     color: $white;
     font-size: 50px;
     line-height: 60px;
-    padding-top: 70px;
-    padding-bottom: 79px;
+    padding-top: 179px;
+    padding-bottom: 77px;
+    margin-top: -108px;
   }
 
   @include media-width($desktop-width) {
-    max-width: 750px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 63px;
+    padding-top: 172px;
     padding-bottom: 100px;
   }
 }
 
 .main__tagline--photo {
+  padding-top: 97px;
   padding-bottom: 81px;
 
   @include media-width($tablet-width) {
-    padding-bottom: 140px;
+    padding-top: 179px;
+    padding-bottom: 141px;
   }
 
   @include media-width($desktop-width) {
-    padding-bottom: 101px;
     max-width: 500px;
-    margin-right: auto;
-    margin-left: auto;
+    padding-top: 172px;
+    padding-bottom: 100px;
   }
 }

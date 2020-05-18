@@ -4,10 +4,11 @@
   text-align: left;
   min-height: 200px;
   border: 2px solid $gray;
-  margin-bottom: 46px;
+  margin-bottom: 45px;
   padding: 15px 19px 15px 19px;
   width: 100%;
   resize: vertical;
+  border-radius: 2px;
 
   @include media-width($tablet-width) {
     min-height: 193px;

@@ -1,8 +1,9 @@
 .users {
-  padding-bottom: 20px;
+  padding-bottom: 22px;
 
   @include media-width($desktop-width) {
     padding-bottom: 0;
+    overflow: hidden;
   }
 }
 
@@ -15,10 +16,10 @@
 
   @include media-width($tablet-width) {
     font-size: 18px;
-    padding: 93px 40px 76px 40px;
+    padding: 93px 40px 74px 40px;
   }
 
   @include media-width($desktop-width) {
-    padding: 92px 150px 87px 150px;
+    padding: 92px 181px 87px 179px;
   }
 }

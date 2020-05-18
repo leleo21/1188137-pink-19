@@ -25,16 +25,19 @@
   @include media-width($tablet-width) {
     font-size: 18px;
     order: -1;
-    max-width: 500px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 71px;
     margin-top: 91px;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 
   @include media-width($desktop-width) {
-    max-width: 800px;
+    margin-top: 92px;
     margin-bottom: 65px;
+    padding-right: 80px;
+    padding-left: 80px;
   }
 }
 
@@ -56,7 +59,7 @@
     margin-top: 19px;
     margin-bottom: 0;
     min-width: 435px;
-    margin-right: 54px;
+    margin-right: 0;
   }
 }
 
@@ -68,6 +71,7 @@
   margin-top: -38px;
   padding-left: 20px;
   padding-right: 20px;
+  border-radius: 2px;
 
 
   @include media-width($tablet-width) {
@@ -82,6 +86,8 @@
 
   @include media-width($desktop-width) {
     margin-bottom: 81px;
+    padding-right: 0;
+    max-width: 940px;
   }
 }
 
@@ -89,7 +95,7 @@
   margin: 0;
   border: none;
   padding: 0;
-  padding-top: 30px;
+  border-radius: 2px;
 
   @include media-width($tablet-width) {
     border: 2px solid $gray;
@@ -136,10 +142,11 @@
   padding: 0;
   text-align: center;
   margin-top: -30px;
+  border-radius: 2px;
 
   @include media-width($tablet-width) {
     border: 2px solid $gray;
-    margin-bottom: 68px;
+    margin-bottom: 66px;
     padding-left: 58px;
     padding-right: 58px;
     order: 4;
@@ -157,7 +164,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 30px;
+    padding-bottom: 32px;
     order: 5;
     flex-grow: 1;
   }
@@ -168,19 +175,23 @@
 }
 
 .form__title {
-  color: $pink;
-  font-size: 14px;
-  line-height: 18px;
   text-align: center;
-  text-transform: uppercase;
   padding-left: 31px;
   padding-right: 31px;
-  margin-bottom: 39px;
-
+  margin-bottom: 37px;
+  margin-left: auto;
+  margin-right: auto;
 
   @include media-width($tablet-width) {
     padding-top: 0;
   }
+}
+
+.form__heading {
+  color: $pink;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
 
   @include media-width($desktop-width) {
     line-height: 30px;
@@ -202,6 +213,7 @@
 
 .form__title--platform {
   padding-top: 110px;
+  margin-bottom: 35px;
 
   @include media-width($tablet-width) {
     padding-top: 0;
@@ -306,15 +318,22 @@
 }
 
 .form__title--contact {
-  display: none;
+  margin-bottom: 29px;
 
   @include media-width($tablet-width) {
-    display: inline-block;
     vertical-align: top;
-    margin-bottom: 7px;
+    margin-bottom: 37px;
   }
 
   @include media-width($desktop-width) {
-    margin-bottom: 28px;
+    margin-bottom: 29px;
+  }
+}
+
+.form__heading--contacts {
+  display: none;
+
+  @include media-width($tablet-width) {
+    display: table;
   }
 }

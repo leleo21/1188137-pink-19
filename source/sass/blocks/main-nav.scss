@@ -5,14 +5,17 @@
   @include media-width($desktop-width) {
     display: block;
     width: auto;
+    padding-top: 11px;
   }
 }
 
 .main-nav__list {
+  border-top: 1px solid $black;
   margin-left: -20px;
   margin-right: -20px;
 
   @include media-width($desktop-width) {
+    border-top: none;
     display: flex;
     margin: 0;
   }
@@ -20,7 +23,8 @@
 
 .main-nav__item {
   text-transform: uppercase;
-  border-bottom: 1px solid $dark;
+  border-bottom: 1px solid $black;
+  border-top: 1px solid #485461;
   text-align: center;
 
   @include media-width($desktop-width) {
@@ -30,13 +34,6 @@
   }
 }
 
-.main-nav__item:first-child {
-  border-top: 1px solid $dark;
-
-  @include media-width($desktop-width) {
-    border-top: none;
-  }
-}
 
 .main-nav__item:last-child {
   @include media-width($desktop-width) {
@@ -46,11 +43,15 @@
 
 .main-nav__link {
   display: block;
-  padding: 16px 20px 15px 20px;
+  padding: 15px 20px 15px 20px;
   color: $white;
   font-weight: bold;
   font-size: 18px;
   line-height: 32px;
+
+  @include media-width($tablet-width) {
+    padding: 15px 20px 15px 20px;
+  }
 
   @include media-width($desktop-width) {
     font-weight: normal;
@@ -59,10 +60,19 @@
   }
 }
 
-.main-nav__link:focus {
+.main-nav__link--active {
+  position: relative;
+}
+
+.main-nav__link--active::before {
   @include media-width($desktop-width) {
-    color: $white;
-    text-decoration: underline;
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -13px;
+    left: 0;
+    height: 2px;
+    background: white;
   }
 }
 
@@ -72,7 +82,6 @@
 
 .main-nav__link:active {
   color: rgba(210, 40, 86, 0.3);
-  text-decoration: none;
 
   @include media-width($desktop-width) {
     color: rgba(255, 255, 255, 0.3);

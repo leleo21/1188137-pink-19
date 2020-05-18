@@ -1,8 +1,14 @@
 .reviews {
   padding-top: 42px;
+  padding-bottom: 34px;
 
   @include media-width($tablet-width) {
     padding-top: 28px;
+    padding-bottom: 16px;
+  }
+
+  @include media-width($desktop-width) {
+    padding-bottom: 13px;
   }
 }
 
@@ -14,6 +20,8 @@
 
   @include media-width($desktop-width) {
     display: block;
+    margin-top: 41px;
+    margin-bottom: 46px;
   }
 }
 
@@ -31,13 +39,14 @@
   margin-bottom: 30px;
 
   @include media-width($tablet-width) {
-    margin-bottom: 36px;
+    margin-bottom: 34px;
   }
 
   @include media-width($desktop-width) {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 38px;
   }
 }
 
@@ -91,7 +100,7 @@
 
 .reviews__arrow {
   display: none;
-  margin-top: 10px;
+  margin-top: 5px;
   fill: $dark;
   opacity: 0.3;
 

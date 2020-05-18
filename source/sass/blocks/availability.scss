@@ -5,7 +5,9 @@
   background-color: $black;
   color: $white;
   margin: 0;
-  background-position: top -113px center;
+  background-position: top center;
+  margin-top: -70px;
+
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
@@ -14,12 +16,12 @@
 
   @include media-width($tablet-width) {
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    margin-bottom: 0;
     background-position: top center;
+    margin-top: -107px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
-      background-size: 1200px auto;
+      background-size: 960px auto;
     }
   }
 
@@ -34,20 +36,18 @@
 }
 
 .availability__wrapper {
-  padding-top: 22px;
+  padding-top: 90px;
 
   @include media-width($tablet-width) {
     position: relative;
     z-index: 1;
-    margin-right: -20px;
-    padding-top: 94px;
+    padding-top: 201px;
     padding-bottom: 80px;
   }
 
   @include media-width($desktop-width) {
     padding-bottom: 92px;
-    padding-top: 109px;
-    margin-right: 0;
+    padding-top: 214px;
   }
 }
 
@@ -116,7 +116,7 @@
 }
 
 .availability__main {
-  background-color: $black;
+  background-color: $dark;
   padding-top: 27px;
   padding-bottom: 30px;
   margin-left: -20px;

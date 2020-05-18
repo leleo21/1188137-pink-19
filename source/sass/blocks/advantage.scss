@@ -1,20 +1,26 @@
 .advantage {
   position: relative;
   background-color: $gray;
+  z-index: 1;
 
-  .advantage__wrapper {
-    @include media-width($tablet-width) {
-      display: flex;
-    }
+  @include media-width($desktop-width) {
+    background-color: $white;
   }
 }
 
+.advantage__wrapper {
+  @include media-width($tablet-width) {
+    display: flex;
+  }
+}
+
+
 .advantage__list {
-  padding-top: 112px;
+  padding-top: 76px;
   padding-bottom: 41px;
 
   @include media-width($tablet-width) {
-    padding-top: 95px;
+    padding-top: 71px;
     padding-bottom: 6px;
   }
 
@@ -29,8 +35,7 @@
 
   @include media-width($tablet-width) {
     order: -1;
-    margin-top: 50px;
-    margin-right: 40px;
+    margin-right: 41px;
     overflow: inherit;
     z-index: 1;
   }
@@ -60,7 +65,11 @@
   background-repeat: no-repeat;
   background-position: center top;
   width: 100%;
-  height: 94px;
-  right: 50%;
-  transform: translateX(50%);  
+  padding-top: 8%;
+  top: -1px;
+  z-index: -1;
+
+  @include media-width($desktop-width) {
+    top: 9px;
+  }
 }
