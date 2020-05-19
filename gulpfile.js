@@ -18,6 +18,8 @@ var del = require("del");
 var htmlmin = require("gulp-htmlmin");
 var jsmin = require("gulp-uglify");
 
+
+
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
@@ -32,6 +34,7 @@ gulp.task("css", function () {
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
+
 
 gulp.task("images", function() {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
@@ -76,7 +79,6 @@ gulp.task('js', function() {
 gulp.task("copy", function() {
   return gulp.src([
     "source/fonts/**",
-    // "source/fonts/**/*.{woff, woff2}",
     "source/img/**",
     "source/js/*.js",
     "source/*.ico"

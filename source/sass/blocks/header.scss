@@ -1,35 +1,48 @@
 .header {
-  background-color: $dark;
+  background-color: rgba(0, 0, 0, 0.3);
   padding-top: 22px;
+  position: relative;
+  z-index: 10;
 
   @include media-width($tablet-width) {
     padding-top: 26px;
   }
+}
 
-  .header__wrapper {
-    @include media-width($desktop-width) {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding-bottom: 41px;
-    }
+.header--opened {
+  background-color: $dark;
+}
+
+.header__wrapper {
+  @include media-width($desktop-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 41px;
   }
 }
+
 
 .header__top {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 22px;
+  padding-bottom: 20px;
+  margin-right: -20px;
+  margin-left: -20px;
+  padding-right: 20px;
+  padding-left: 20px;
 
   @include media-width($tablet-width) {
     align-items: flex-end;
-    padding-bottom: 43px;
+    padding-bottom: 39px;
   }
 
   @include media-width($desktop-width) {
-    padding-bottom: 0;
+    padding: 0;
+    margin: 0;
+    border: none;
   }
 }
 
@@ -44,6 +57,7 @@
   border: none;
   font-size: 0;
   cursor: pointer;
+  margin-bottom: 1px;
 
   @include media-width($desktop-width) {
     display: none;

@@ -29,10 +29,11 @@
 
 .input-list-contacts__item:last-child {
   @include media-width($tablet-width) {
-    margin-bottom: 14px;
+    margin-bottom: 18px;
   }
 
   @include media-width($desktop-width) {
+    margin-bottom: 14px;
     margin-left: 73px;
   }
 }
@@ -44,7 +45,7 @@
   line-height: 30px;
   color: $pink;
   text-transform: uppercase;
-  margin-left: 21px;
+  margin-left: 22px;
   margin-bottom: 5px;
 
   @include media-width($tablet-width) {
@@ -61,10 +62,12 @@
   border: 2px solid $lightgray;
   color: $dark;
   width: 100%;
+  border-radius: 2px;
+  min-height: 62px;
 
   @include media-width($tablet-width) {
     margin-bottom: 9px;
-    padding: 15px 77px 15px 17px;
+    padding: 14px 77px 14px 17px;
   }
 }
 
@@ -80,7 +83,7 @@
   background-position: center center;
   background-color: $gray;
   width: 60px;
-  height: 60px;
+  height: 58px;
   top: 2px;
   right: 2px;
 

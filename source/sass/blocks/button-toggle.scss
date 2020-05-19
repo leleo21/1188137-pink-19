@@ -19,6 +19,7 @@
 .button-toggle__icon {
   background-color: transparent;
   border: none;
+  cursor: pointer;
   padding: 0;
 
   @include media-width($tablet-width) {
@@ -29,7 +30,7 @@
 
   @include media-width($desktop-width) {
     margin-left: 0;
-    margin-bottom: 12px;
+    margin-bottom: 13px;
     margin-top: 15px;
   }
 }
@@ -58,9 +59,13 @@
     border: 2px solid $pink;
     border-radius: 50%;
     top: -6px;
-    left: 92px;
+    left: 146px;
     background-color: $gray;
     cursor: pointer;
+  }
+
+  @include media-width($desktop-width) {
+    left: 73px;
   }
 }
 
@@ -107,6 +112,22 @@
 .button-toggle__image {
   fill: $dark;
   opacity: 0.3;
+}
+
+.button-toggle__switch--fill {
+  left: 25px;
+
+  @include media-width($desktop-width) {
+    left: 249px;
+  }
+}
+
+.button-toggle__switch--contrast {
+  left: 96px;
+
+  @include media-width($desktop-width) {
+    left: 163px;
+  }
 }
 
 .button-toggle__image:hover {

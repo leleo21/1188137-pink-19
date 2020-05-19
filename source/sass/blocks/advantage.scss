@@ -3,15 +3,19 @@
   background-color: $gray;
   z-index: 1;
 
-  .advantage__wrapper {
-    @include media-width($tablet-width) {
-      display: flex;
-    }
+  @include media-width($desktop-width) {
+    background-color: $white;
+  }
+}
+
+.advantage__wrapper {
+  @include media-width($tablet-width) {
+    display: flex;
   }
 }
 
 .advantage__list {
-  padding-top: 79px;
+  padding-top: 76px;
   padding-bottom: 41px;
 
   @include media-width($tablet-width) {
@@ -30,7 +34,7 @@
 
   @include media-width($tablet-width) {
     order: -1;
-    margin-right: 40px;
+    margin-right: 41px;
     overflow: inherit;
     z-index: 1;
   }
@@ -63,4 +67,8 @@
   padding-top: 8%;
   top: -1px;
   z-index: -1;
+
+  @include media-width($desktop-width) {
+    top: 9px;
+  }
 }

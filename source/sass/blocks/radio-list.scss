@@ -1,10 +1,10 @@
 .radio-list {
   @include media-width($tablet-width) {
-    margin-bottom: 56px;
+    margin-bottom: 55px;
   }
 
   @include media-width($desktop-width) {
-    margin-bottom: 53px;
+    margin-bottom: 52px;
   }
 }
 
@@ -55,5 +55,5 @@
 }
 
 .radio-list__item {
-  margin-bottom: 38px;
+  margin-bottom: 39px;
 }

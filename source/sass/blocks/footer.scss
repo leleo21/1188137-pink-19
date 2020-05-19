@@ -30,12 +30,12 @@
 
   @include media-width($tablet-width) {
     margin-right: 17px;
-    margin-top: 6px;
+    margin-top: 4px;
     margin-bottom: 0;
   }
 
   @include media-width($desktop-width) {
-    margin-right: 0;
+    margin-right: 9px;
   }
 }
 

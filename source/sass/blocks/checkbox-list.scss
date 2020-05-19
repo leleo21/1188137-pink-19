@@ -17,8 +17,8 @@
   margin-bottom: 44px;
 
   @include media-width($desktop-width) {
-    width: calc((99.9% - 20px * 2) / 3);
-    margin-right: 20px;
+    width: 260px;
+    margin-right: 47px;
   }
 }
 
@@ -60,6 +60,7 @@
 }
 
 .checkbox-list__label {
+  position: relative;
   display: flex;
   align-items: center;
   font-size: 18px;
@@ -96,6 +97,14 @@
   opacity: 0;
 }
 
-.checkbox-list__input:checked + .checkbox-list__label::before {
-  background-image: url("../img/icon-yes.svg");
+.checkbox-list__input:checked + .checkbox-list__label::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 9px;
+  width: 21px;
+  height: 9px;
+  border-bottom: 2px solid #d22856;
+  border-left: 2px solid #d22856;
+  transform: rotate(-45deg);
 }

@@ -12,18 +12,39 @@
   }
 
   @include media-width($desktop-width) {
-    padding-top: 154px;
+    padding-top: 144px;
     padding-bottom: 96px;
   }
 }
 
+.prices__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: -20px;
+  margin-right: -20px;
+  align-items: center;
+  overflow: hidden;
+
+  @include media-width($tablet-width) {
+    margin: 0;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}
+
 .prices__table {
-  width: 100%;
+  width: 840px;
   margin-bottom: 34px;
   text-transform: uppercase;
+  overflow: hidden;
+
+  @include media-width($tablet-width) {
+    width: 100%;
+  }
 
   @include media-width($desktop-width) {
     margin-bottom: 0;
+    width: 99%;
   }
 }
 
@@ -68,7 +89,7 @@
 }
 
 .prices__option {
-  display: flex;
+  display: none;
   justify-content: space-between;
   font-size: 14px;
   line-height: 30px;
@@ -76,35 +97,47 @@
   background-color: $white;
   text-align: left;
   font-weight: normal;
-  padding: 13px 20px 13px 21px;
+  text-transform: capitalize;
+  padding: 7px 15px 7px 15px;
 
   @include media-width($tablet-width) {
     display: table-cell;
-    text-transform: capitalize;
-    padding: 7px 15px 7px 15px;
   }
 
   @include media-width($desktop-width) {
     font-size: 18px;
     text-align: left;
-    padding: 14px 20px 15px 20px;
+    padding: 14px 20px 15px 27px;
   }
 }
 
 .prices__choice {
   text-align: center;
   padding-top: 14px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   background-color: $white;
-  display: none;
 
   @include media-width($tablet-width) {
-    display: table-cell;
     padding: 0;
   }
 }
 
-.prices__selection {
+.prices__choice-wrapper {
+  display: flex;
+  padding-left: 22px;
+  padding-right: 20px;
+  justify-content: space-between;
+
+  @include media-width($tablet-width) {
+    display: inline-block;
+    padding: 0;
+  }
+}
+
+.prices__text {
+  font-size: 14px;
+  line-height: 30px;
+
   @include media-width($tablet-width) {
     display: none;
   }
@@ -122,14 +155,6 @@
   @include media-width($tablet-width) {
     display: table-cell;
     opacity: 0;
-  }
-}
-
-.prices__heading--showmobile {
-  display: none;
-
-  @include media-width($tablet-width) {
-    display: table-cell;
   }
 }
 
@@ -156,6 +181,8 @@
   }
 
   @include media-width($desktop-width) {
+    background-image: url("../img/bg-hit.svg");
+    width: 100%;
     height: 173px;
   }
 }
@@ -173,6 +200,10 @@
   @include media-width($tablet-width) {
     top: 9px;
   }
+
+  @include media-width($desktop-width) {
+    top: 18px;
+  }
 }
 
 .prices::before {
@@ -188,4 +219,10 @@
 
 .prices__yes {
   fill: $lightgreen;
+  margin-top: 6px;
+
+  @include media-width($tablet-width) {
+    margin-top: 9px;
+    margin-right: 4px;
+  }
 }

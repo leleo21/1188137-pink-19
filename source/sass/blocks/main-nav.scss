@@ -10,10 +10,12 @@
 }
 
 .main-nav__list {
+  border-top: 1px solid $black;
   margin-left: -20px;
   margin-right: -20px;
 
   @include media-width($desktop-width) {
+    border-top: none;
     display: flex;
     margin: 0;
   }
@@ -22,20 +24,13 @@
 .main-nav__item {
   text-transform: uppercase;
   border-bottom: 1px solid $black;
+  border-top: 1px solid #485461;
   text-align: center;
 
   @include media-width($desktop-width) {
     border: none;
     text-transform: capitalize;
     margin-right: 80px;
-  }
-}
-
-.main-nav__item:first-child {
-  border-top: 1px solid $black;
-
-  @include media-width($desktop-width) {
-    border-top: none;
   }
 }
 
@@ -47,11 +42,15 @@
 
 .main-nav__link {
   display: block;
-  padding: 16px 20px 15px 20px;
+  padding: 15px 20px 15px 20px;
   color: $white;
   font-weight: bold;
   font-size: 18px;
   line-height: 32px;
+
+  @include media-width($tablet-width) {
+    padding: 15px 20px 15px 20px;
+  }
 
   @include media-width($desktop-width) {
     font-weight: normal;
@@ -61,8 +60,18 @@
 }
 
 .main-nav__link--active {
+  position: relative;
+}
+
+.main-nav__link--active::before {
   @include media-width($desktop-width) {
-    text-decoration: underline;
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -13px;
+    left: 0;
+    height: 2px;
+    background: white;
   }
 }
 

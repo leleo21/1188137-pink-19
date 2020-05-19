@@ -4,10 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
-  <link rel="preload" href="fonts\opensans.woff2" as="font">
+  <link class="favicon" rel="shortcut icon" href="img/favicons/16x16.ico" type="image/x-icon">
+  <link class="favicon" rel="shortcut icon" href="img/favicons/32x32.ico" type="image/x-icon">
+  <link class="favicon" rel="shortcut icon" href="img/favicons/64x64.ico" type="image/x-icon">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link href="sass/base/normalize.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 </head>
+
 <body>
   <svg class="visually-hidden" xmlns="http://www.w3.org/2000/svg">
     <include src="build/img/sprite.svg"></include>
@@ -56,313 +61,314 @@
             <a class="users-list__link" href="#">
               <div class="users-list__image users-list__image--main">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/panorama-desktop_1x.webp 1x, img/webp/webp/panorama-desktop_2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/panorama-tablet_1x.webp 1x, img/webp/panorama-tablet_2x.webp 2x">
-                      <source type="image/webp" srcset="img/webp/panorama-mobile_1x.webp 1x, img/webp/panorama-mobile_2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/webp/panorama-desktop_1x.webp 1x, img/webp/webp/panorama-desktop_2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/panorama-tablet_1x.webp 1x, img/webp/panorama-tablet_2x.webp 2x">
+                  <source type="image/webp" srcset="img/webp/panorama-mobile_1x.webp 1x, img/webp/panorama-mobile_2x.webp 2x">
 
-                        <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
-                          <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
-                            <img class="users-list__picture users-list__picture--main" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Панорама леса">
-                          </picture>
-                        </div>
-                        <span class="users-list__checkbox">Панорама дня</span>
-                      </a>
-                      <div class="users-list__info information information--main">
-                        <b class="information__name"> Анна <span class="information__time">(5 минут назад)</span></b>
-                        <p class="information__text">
-                          Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
-                        </p>
-                        <div class="information__stats information__stats--main">
-                          <button class="information__heart information__heart--main" type="button">
-                            <svg class="information__heart-image" width="14" height="12">
-                              <use xlink:href="#icon-heart" />
-                            </svg>
-                          </button>
-                          <b class="information__like">Нравится: 215</b>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="users-list__item">
-                      <a class="users-list__link" href="#">
-                        <div class="users-list__image">
-                          <picture>
-                            <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/photo-car-desktop_1x.webp 1x, img/webp/webp/photo-car-desktop_2x.webp 2x">
-                              <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/photo-car-tablet_1x.webp 1x, img/webp/photo-car-tablet_2x.webp 2x">
-                                <source type="image/webp" srcset="img/webp/photo-car-mobile_1x.webp 1x, img/webp/photo-car-mobile_2x.webp 2x">
+                  <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                  <img class="users-list__picture users-list__picture--main" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Панорама леса">
+                </picture>
+              </div>
+              <span class="users-list__checkbox">Панорама дня</span>
+            </a>
+            <div class="users-list__info information information--main">
+              <b class="information__name"> Анна <span class="information__time">(5 минут назад)</span></b>
+              <p class="information__text">
+                Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+              </p>
+              <div class="information__stats information__stats--main">
+                <button class="information__heart information__heart--main" type="button">
+                  <svg class="information__heart-image" width="14" height="12">
+                    <use xlink:href="#icon-heart" />
+                  </svg>
+                </button>
+                <b class="information__like">Нравится: 215</b>
+              </div>
+            </div>
+          </li>
+          <li class="users-list__item">
+            <a class="users-list__link" href="#">
+              <div class="users-list__image">
+                <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/webp/photo-car-desktop_1x.webp 1x, img/webp/webp/photo-car-desktop_2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/photo-car-tablet_1x.webp 1x, img/webp/photo-car-tablet_2x.webp 2x">
+                  <source type="image/webp" srcset="img/webp/photo-car-mobile_1x.webp 1x, img/webp/photo-car-mobile_2x.webp 2x">
 
-                                  <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
-                                    <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
-                                      <img class="users-list__picture" src="img/photo-car-mobile@1x.jpg" srcset="im/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Фото машины">
-                                    </picture>
-                                  </div>
-                                </a>
-                                <div class="users-list__info information">
-                                  <b class="information__name">Левон <span class="information__time">(5 часов назад)</span></b>
-                                  <p class="information__text">
-                                    Вчера он на луну летал, сегодня в руки к нам попал.
-                                  </p>
-                                  <div class="information__stats">
-                                    <button class="information__heart" type="button">
-                                      <svg class="information__heart-image" width="14" height="12">
-                                        <use xlink:href="#icon-heart" />
-                                      </svg>
-                                    </button>
-                                    <b class="information__like">Нравится: 356</b>
-                                  </div>
-                                </div>
-                              </li>
-                              <li class="users-list__item">
-                                <a class="users-list__link" href="#">
-                                  <div class="users-list__image">
-                                    <picture>
-                                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/photo-drumset-desktop_1x.webp 1x, img/webp/webp/photo-drumset-desktop_2x.webp 2x">
-                                        <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/photo-drumset-tablet_1x.webp 1x, img/webp/photo-drumset-tablet_2x.webp 2x">
-                                          <source type="image/webp" srcset="img/webp/photo-drumset-mobile_1x.webp 1x, img/webp/photo-drumset-mobile_2x.webp 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                  <img class="users-list__picture" src="img/photo-car-mobile@1x.jpg" srcset="im/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Фото машины">
+                </picture>
+              </div>
+            </a>
+            <div class="users-list__info information">
+              <b class="information__name">Левон <span class="information__time">(5 часов назад)</span></b>
+              <p class="information__text">
+                Вчера он на луну летал, сегодня в руки к нам попал.
+              </p>
+              <div class="information__stats">
+                <button class="information__heart" type="button">
+                  <svg class="information__heart-image" width="14" height="12">
+                    <use xlink:href="#icon-heart" />
+                  </svg>
+                </button>
+                <b class="information__like">Нравится: 356</b>
+              </div>
+            </div>
+          </li>
+          <li class="users-list__item">
+            <a class="users-list__link" href="#">
+              <div class="users-list__image">
+                <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/webp/photo-drumset-desktop_1x.webp 1x, img/webp/webp/photo-drumset-desktop_2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/photo-drumset-tablet_1x.webp 1x, img/webp/photo-drumset-tablet_2x.webp 2x">
+                  <source type="image/webp" srcset="img/webp/photo-drumset-mobile_1x.webp 1x, img/webp/photo-drumset-mobile_2x.webp 2x">
 
-                                            <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
-                                              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
-                                                <img class="users-list__picture" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg" width="280" height="180" alt="Барабанная установка">
-                                              </picture>
-                                            </div>
-                                          </a>
-                                          <div class="users-list__info information">
-                                            <b class="information__name">Антон <span class="information__time">(12 часов назад)</span></b>
-                                            <p class="information__text">
-                                              Соседи будут рады!
-                                            </p>
-                                            <div class="information__stats">
-                                              <button class="information__heart" type="button">
-                                                <svg class="information__heart-image" width="14" height="12">
-                                                  <use xlink:href="#icon-heart" />
-                                                </svg>
-                                              </button>
-                                              <b class="information__like">Нравится: 666</b>
-                                            </div>
-                                          </div>
-                                        </li>
-                                        <li class="users-list__item">
-                                          <a class="users-list__link" href="#">
-                                            <div class="users-list__image">
-                                              <picture>
-                                                <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/photo-window-desktop_1x.webp 1x, img/webp/webp/photo-window-desktop_2x.webp 2x">
-                                                  <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/photo-window-tablet_1x.webp 1x, img/webp/photo-window-tablet_2x.webp 2x">
-                                                    <source type="image/webp" srcset="img/webp/photo-window-mobile_1x.webp 1x, img/webp/photo-window-mobile_2x.webp 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                  <img class="users-list__picture" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg" width="280" height="180" alt="Барабанная установка">
+                </picture>
+              </div>
+            </a>
+            <div class="users-list__info information">
+              <b class="information__name">Антон <span class="information__time">(12 часов назад)</span></b>
+              <p class="information__text">
+                Соседи будут рады!
+              </p>
+              <div class="information__stats">
+                <button class="information__heart" type="button">
+                  <svg class="information__heart-image" width="14" height="12">
+                    <use xlink:href="#icon-heart" />
+                  </svg>
+                </button>
+                <b class="information__like">Нравится: 666</b>
+              </div>
+            </div>
+          </li>
+          <li class="users-list__item">
+            <a class="users-list__link" href="#">
+              <div class="users-list__image">
+                <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/webp/photo-window-desktop_1x.webp 1x, img/webp/webp/photo-window-desktop_2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/photo-window-tablet_1x.webp 1x, img/webp/photo-window-tablet_2x.webp 2x">
+                  <source type="image/webp" srcset="img/webp/photo-window-mobile_1x.webp 1x, img/webp/photo-window-mobile_2x.webp 2x">
 
-                                                      <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
-                                                        <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
-                                                          <img class="users-list__picture" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg" width="280" height="180" alt="Стеклянная крыша">
-                                                        </picture>
-                                                      </div>
-                                                    </a>
-                                                    <div class="users-list__info information">
-                                                      <b class="information__name">Борис <span class="information__time">(20 часов назад)</span></b>
-                                                      <p class="information__text">
-                                                        Здесь могла быть ваша цитата о высоком и вечном.
-                                                      </p>
-                                                      <div class="information__stats">
-                                                        <button class="information__heart" type="button">
-                                                          <svg class="information__heart-image" width="14" height="12">
-                                                            <use xlink:href="#icon-heart" />
-                                                          </svg>
-                                                        </button>
-                                                        <b class="information__like">Нравится: 215</b>
-                                                      </div>
-                                                    </div>
-                                                  </li>
-                                                  <li class="users-list__item">
-                                                    <a class="users-list__link" href="#">
-                                                      <div class="users-list__image">
-                                                        <picture>
-                                                          <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/photo-fair-desktop_1x.webp 1x, img/webp/webp/photo-fair-desktop_2x.webp 2x">
-                                                            <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/photo-fair-tablet_1x.webp 1x, img/webp/photo-fair-tablet_2x.webp 2x">
-                                                              <source type="image/webp" srcset="img/webp/photo-fair-mobile_1x.webp 1x, img/webp/photo-fair-mobile_2x.webp 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                  <img class="users-list__picture" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg" width="280" height="180" alt="Стеклянная крыша">
+                </picture>
+              </div>
+            </a>
+            <div class="users-list__info information">
+              <b class="information__name">Борис <span class="information__time">(20 часов назад)</span></b>
+              <p class="information__text">
+                Здесь могла быть ваша цитата о высоком и вечном.
+              </p>
+              <div class="information__stats">
+                <button class="information__heart" type="button">
+                  <svg class="information__heart-image" width="14" height="12">
+                    <use xlink:href="#icon-heart" />
+                  </svg>
+                </button>
+                <b class="information__like">Нравится: 215</b>
+              </div>
+            </div>
+          </li>
+          <li class="users-list__item">
+            <a class="users-list__link" href="#">
+              <div class="users-list__image">
+                <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/webp/photo-fair-desktop_1x.webp 1x, img/webp/webp/photo-fair-desktop_2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/photo-fair-tablet_1x.webp 1x, img/webp/photo-fair-tablet_2x.webp 2x">
+                  <source type="image/webp" srcset="img/webp/photo-fair-mobile_1x.webp 1x, img/webp/photo-fair-mobile_2x.webp 2x">
 
-                                                                <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
-                                                                  <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
-                                                                    <img class="users-list__picture" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg" width="280" height="180" alt="Кубанский рынок">
-                                                                  </picture>
-                                                                </div>
-                                                              </a>
-                                                              <div class="users-list__info information">
-                                                                <b class="information__name">Сергей <span class="information__time">(25 часов назад)</span></b>
-                                                                <p class="information__text">
-                                                                  Самая кубанская в мире!
-                                                                </p>
-                                                                <div class="information__stats">
-                                                                  <button class="information__heart" type="button">
-                                                                    <svg class="information__heart-image" width="14" height="12">
-                                                                      <use xlink:href="#icon-heart" />
-                                                                    </svg>
-                                                                  </button>
-                                                                  <b class="information__like">Нравится: 4</b>
-                                                                </div>
-                                                              </div>
-                                                            </li>
-                                                            <li class="users-list__item">
-                                                              <a class="users-list__link" href="#">
-                                                                <div class="users-list__image">
-                                                                  <picture>
-                                                                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/photo-pov-desktop_1x.webp 1x, img/webp/webp/photo-pov-desktop_2x.webp 2x">
-                                                                      <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/photo-pov-tablet_1x.webp 1x, img/webp/photo-pov-tablet_2x.webp 2x">
-                                                                        <source type="image/webp" srcset="img/webp/photo-pov-mobile_1x.webp 1x, img/webp/photo-pov-mobile_2x.webp 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                  <img class="users-list__picture" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg" width="280" height="180" alt="Кубанский рынок">
+                </picture>
+              </div>
+            </a>
+            <div class="users-list__info information">
+              <b class="information__name">Сергей <span class="information__time">(25 часов назад)</span></b>
+              <p class="information__text">
+                Самая кубанская в мире!
+              </p>
+              <div class="information__stats">
+                <button class="information__heart" type="button">
+                  <svg class="information__heart-image" width="14" height="12">
+                    <use xlink:href="#icon-heart" />
+                  </svg>
+                </button>
+                <b class="information__like">Нравится: 4</b>
+              </div>
+            </div>
+          </li>
+          <li class="users-list__item">
+            <a class="users-list__link" href="#">
+              <div class="users-list__image">
+                <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/webp/photo-pov-desktop_1x.webp 1x, img/webp/webp/photo-pov-desktop_2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/photo-pov-tablet_1x.webp 1x, img/webp/photo-pov-tablet_2x.webp 2x">
+                  <source type="image/webp" srcset="img/webp/photo-pov-mobile_1x.webp 1x, img/webp/photo-pov-mobile_2x.webp 2x">
 
-                                                                          <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
-                                                                            <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
-                                                                              <img class="users-list__picture" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg" width="280" height="180" alt="Вид с горы">
-                                                                            </picture>
-                                                                          </div>
-                                                                        </a>
-                                                                        <div class="users-list__info information">
-                                                                          <b class="information__name">Максим <span class="information__time">(40 часов назад)</span></b>
-                                                                          <p class="information__text">
-                                                                            Где снег-то?
-                                                                          </p>
-                                                                          <div class="information__stats">
-                                                                            <button class="information__heart" type="button">
-                                                                              <svg class="information__heart-image" width="14" height="12">
-                                                                                <use xlink:href="#icon-heart" />
-                                                                              </svg>
-                                                                            </button>
-                                                                            <b class="information__like">Нравится: 150</b>
-                                                                          </div>
-                                                                        </div>
-                                                                      </li>
-                                                                      <li class="users-list__item">
-                                                                        <a class="users-list__link" href="#">
-                                                                          <div class="users-list__image">
-                                                                            <picture>
-                                                                              <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/photo-wing-desktop_1x.webp 1x, img/webp/webp/photo-wing-desktop_2x.webp 2x">
-                                                                                <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/photo-wing-tablet_1x.webp 1x, img/webp/photo-wing-tablet_2x.webp 2x">
-                                                                                  <source type="image/webp" srcset="img/webp/photo-wing-mobile_1x.webp 1x, img/webp/photo-wing-mobile_2x.webp 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                  <img class="users-list__picture" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg" width="280" height="180" alt="Вид с горы">
+                </picture>
+              </div>
+            </a>
+            <div class="users-list__info information">
+              <b class="information__name">Максим <span class="information__time">(40 часов назад)</span></b>
+              <p class="information__text">
+                Где снег-то?
+              </p>
+              <div class="information__stats">
+                <button class="information__heart" type="button">
+                  <svg class="information__heart-image" width="14" height="12">
+                    <use xlink:href="#icon-heart" />
+                  </svg>
+                </button>
+                <b class="information__like">Нравится: 150</b>
+              </div>
+            </div>
+          </li>
+          <li class="users-list__item">
+            <a class="users-list__link" href="#">
+              <div class="users-list__image">
+                <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/webp/photo-wing-desktop_1x.webp 1x, img/webp/webp/photo-wing-desktop_2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/photo-wing-tablet_1x.webp 1x, img/webp/photo-wing-tablet_2x.webp 2x">
+                  <source type="image/webp" srcset="img/webp/photo-wing-mobile_1x.webp 1x, img/webp/photo-wing-mobile_2x.webp 2x">
 
-                                                                                    <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
-                                                                                      <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
-                                                                                        <img class="users-list__picture" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg" width="280" height="180" alt="Крыло самолета">
-                                                                                      </picture>
-                                                                                    </div>
-                                                                                  </a>
-                                                                                  <div class="users-list__info information">
-                                                                                    <b class="information__name">Надежда <span class="information__time">(45 часов назад)</span></b>
-                                                                                    <p class="information__text">
-                                                                                      Всем GM и взаимные лайки!
-                                                                                    </p>
-                                                                                    <div class="information__stats">
-                                                                                      <button class="information__heart" type="button">
-                                                                                        <svg class="information__heart-image" width="14" height="12">
-                                                                                          <use xlink:href="#icon-heart" />
-                                                                                        </svg>
-                                                                                      </button>
-                                                                                      <b class="information__like">Нравится: 2560</b>
-                                                                                    </div>
-                                                                                  </div>
-                                                                                </li>
-                                                                              </ul>
-                                                                            </div>
-                                                                          </section>
-                                                                          <section class="loading">
-                                                                            <h2 class="visually-hidden">Загрузка данных на сайт Pink</h2>
-                                                                            <div class="loading__list">
-                                                                              <p class="loading__text-item">Затмите их всех!
-                                                                                <br> Выкладывайте все, что накопилось в телефоне!</p>
-                                                                                <div class="container">
-                                                                                  <div class="loading__post">
-                                                                                    <picture>
-                                                                                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/photo-road-desktop_1x.webp 1x, img/webp/webp/photo-road-desktop_2x.webp 2x">
-                                                                                        <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/photo-road-tablet_1x.webp 1x, img/webp/photo-road-tablet_2x.webp 2x">
-                                                                                          <source type="image/webp" srcset="img/webp/photo-road-mobile_1x.webp 1x, img/webp/photo-road-mobile_2x.webp 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                  <img class="users-list__picture" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg" width="280" height="180" alt="Крыло самолета">
+                </picture>
+              </div>
+            </a>
+            <div class="users-list__info information">
+              <b class="information__name">Надежда <span class="information__time">(45 часов назад)</span></b>
+              <p class="information__text">
+                Всем GM и взаимные лайки!
+              </p>
+              <div class="information__stats">
+                <button class="information__heart" type="button">
+                  <svg class="information__heart-image" width="14" height="12">
+                    <use xlink:href="#icon-heart" />
+                  </svg>
+                </button>
+                <b class="information__like">Нравится: 2560</b>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="loading">
+      <h2 class="visually-hidden">Загрузка данных на сайт Pink</h2>
+      <div class="loading__list">
+        <p class="loading__text-item">Затмите их всех!
+          <br> Выкладывайте все, что накопилось в телефоне!
+        </p>
+        <div class="container">
+          <div class="loading__post">
+            <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/webp/photo-road-desktop_1x.webp 1x, img/webp/webp/photo-road-desktop_2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/photo-road-tablet_1x.webp 1x, img/webp/photo-road-tablet_2x.webp 2x">
+              <source type="image/webp" srcset="img/webp/photo-road-mobile_1x.webp 1x, img/webp/photo-road-mobile_2x.webp 2x">
 
-                                                                                            <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
-                                                                                              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
-                                                                                                <img class="loading__picture" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg" width="280" height="374" alt="Снежная дорога">
-                                                                                              </picture>
-                                                                                              <div class="loading__control">
-                                                                                                <div class="loading__toggle button-toggle">
-                                                                                                  <div class="button-toggle__wrapper">
-                                                                                                    <button class="button-toggle__icon button-toggle__icon--crop" type="button">
-                                                                                                      <svg class="button-toggle__image button-toggle__image-crop" width="48" height="48">
-                                                                                                        <use xlink:href="#icon-editor-crop" />
-                                                                                                      </svg>
-                                                                                                    </button>
-                                                                                                    <div class="button-toggle__slider"><span class="button-toggle__switch"></span></div>
-                                                                                                  </div>
-                                                                                                  <div class="button-toggle__wrapper">
-                                                                                                    <button class="button-toggle__icon button-toggle__icon--fill" type="button">
-                                                                                                      <svg class="button-toggle__image button-toggle__image-fill" width="48" height="48">
-                                                                                                        <use xlink:href="#icon-editor-fill" />
-                                                                                                      </svg>
-                                                                                                    </button>
-                                                                                                    <div class="button-toggle__slider"><span class="button-toggle__switch"></span></div>
-                                                                                                  </div>
-                                                                                                  <div class="button-toggle__wrapper">
-                                                                                                    <button class="button-toggle__icon button-toggle__icon--contrast" type="button">
-                                                                                                      <svg class="button-toggle__image button-toggle__image-contrast" width="32" height="32">
-                                                                                                        <use xlink:href="#icon-editor-contrast" />
-                                                                                                      </svg>
-                                                                                                    </button>
-                                                                                                    <div class="button-toggle__slider"><span class="button-toggle__switch"></span></div>
-                                                                                                  </div>
-                                                                                                </div>
-                                                                                                <div class="loading__slider"><span class="loading__slider__switch"></span></div>
-                                                                                                <div class="loading__action">
-                                                                                                  <button class="loading__button loading__button--upload" type="button">Запостить</button>
-                                                                                                  <button class="loading__button loading__button--cancel" type="button">Отмена</button>
-                                                                                                </div>
-                                                                                              </div>
-                                                                                            </div>
-                                                                                          </div>
-                                                                                        </div>
-                                                                                      </section>
-                                                                                    </main>
-                                                                                    <footer class="footer">
-                                                                                      <h2 class="visually-hidden">Контакты сайта Pink</h2>
-                                                                                      <div class="container">
-                                                                                        <div class="footer__advertising">
-                                                                                          <div class="footer__link">
-                                                                                            <a class="footer__logo" href="#" aria-label="Логотип сайта Pink">
-                                                                                              <svg class="footer__image" width="147" height="40">
-                                                                                                <use xlink:href="#logo-pink-blue-mobile" />
-                                                                                              </svg>
-                                                                                              <svg class="footer__image footer__image--desktop" width="147" height="40">
-                                                                                                <use xlink:href="#logo-pink-blue-desktop" />
-                                                                                              </svg>
-                                                                                            </a>
-                                                                                          </div>
-                                                                                          <ul class="footer__social social">
-                                                                                            <li class="social__item">
-                                                                                              <a class="social__link" href="https://www.twitter.com" aria-label="twitter" title="twitter">
-                                                                                                <svg class="social__image" width="17" height="15">
-                                                                                                  <use xlink:href="#icon-twitter" />
-                                                                                                </svg>
-                                                                                              </a>
-                                                                                            </li>
-                                                                                            <li class="social__item">
-                                                                                              <a class="social__link" href="https://www.facebook.com" aria-label="facebook" title="facebook">
-                                                                                                <svg class="social__image" width="9" height="19">
-                                                                                                  <use xlink:href="#icon-facebook" />
-                                                                                                </svg>
-                                                                                              </a>
-                                                                                            </li>
-                                                                                            <li class="social__item">
-                                                                                              <a class="social__link" href="https://www.youtube.com" aria-label="youtube" title="youtube">
-                                                                                                <svg class="social__image" width="15" height="14">
-                                                                                                  <use xlink:href="#icon-youtube" />
-                                                                                                </svg>
-                                                                                              </a>
-                                                                                            </li>
-                                                                                          </ul>
-                                                                                          <div class="footer__developer">
-                                                                                            <p class="footer__text">Разработано</p>
-                                                                                            <a class="footer__htmlacademy" href="https://htmlacademy.ru/" aria-label="htmlacademy" title="htmlacademy">
-                                                                                              <svg class="footer__htmlacademy-image" width="27" height="34">
-                                                                                                <use xlink:href="#logo-htmlacademy" />
-                                                                                              </svg>
-                                                                                            </a>
-                                                                                          </div>
-                                                                                        </div>
-                                                                                      </div>
-                                                                                    </footer>
-                                                                                    <script src="js/picturefill.js"></script>
-                                                                                    <script src="js/main.js"></script>
-                                                                                  </body>
+              <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+              <img class="loading__picture" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg" width="280" height="374" alt="Снежная дорога">
+            </picture>
+            <div class="loading__control">
+              <div class="loading__toggle button-toggle">
+                <div class="button-toggle__wrapper">
+                  <button class="button-toggle__icon button-toggle__icon--crop" type="button">
+                    <svg class="button-toggle__image button-toggle__image-crop" width="48" height="48">
+                      <use xlink:href="#icon-editor-crop" />
+                    </svg>
+                  </button>
+                  <div class="button-toggle__slider"><span class="button-toggle__switch"></span></div>
+                </div>
+                <div class="button-toggle__wrapper">
+                  <button class="button-toggle__icon button-toggle__icon--fill" type="button">
+                    <svg class="button-toggle__image button-toggle__image-fill" width="48" height="48">
+                      <use xlink:href="#icon-editor-fill" />
+                    </svg>
+                  </button>
+                  <div class="button-toggle__slider"><span class="button-toggle__switch button-toggle__switch--fill"></span></div>
+                </div>
+                <div class="button-toggle__wrapper">
+                  <button class="button-toggle__icon button-toggle__icon--contrast" type="button">
+                    <svg class="button-toggle__image button-toggle__image-contrast" width="32" height="32">
+                      <use xlink:href="#icon-editor-contrast" />
+                    </svg>
+                  </button>
+                  <div class="button-toggle__slider"><span class="button-toggle__switch button-toggle__switch--contrast"></span></div>
+                </div>
+              </div>
+              <div class="loading__slider"><span class="loading__slider__switch"></span></div>
+              <div class="loading__action">
+                <button class="loading__button loading__button--upload" type="button">Запостить</button>
+                <button class="loading__button loading__button--cancel" type="button">Отмена</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <h2 class="visually-hidden">Контакты сайта Pink</h2>
+    <div class="container">
+      <div class="footer__advertising">
+        <div class="footer__link">
+          <a class="footer__logo" href="#" aria-label="Логотип сайта Pink">
+            <svg class="footer__image" width="147" height="40">
+              <use xlink:href="#logo-pink-blue-mobile" />
+            </svg>
+            <svg class="footer__image footer__image--desktop" width="147" height="40">
+              <use xlink:href="#logo-pink-blue-desktop" />
+            </svg>
+          </a>
+        </div>
+        <ul class="footer__social social">
+          <li class="social__item">
+            <a class="social__link" href="https://www.twitter.com" aria-label="twitter" title="twitter">
+              <svg class="social__image" width="17" height="15">
+                <use xlink:href="#icon-twitter" />
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://www.facebook.com" aria-label="facebook" title="facebook">
+              <svg class="social__image" width="9" height="19">
+                <use xlink:href="#icon-facebook" />
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://www.youtube.com" aria-label="youtube" title="youtube">
+              <svg class="social__image" width="15" height="14">
+                <use xlink:href="#icon-youtube" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="footer__developer">
+          <p class="footer__text">Разработано</p>
+          <a class="footer__htmlacademy" href="https://htmlacademy.ru/" aria-label="htmlacademy" title="htmlacademy">
+            <svg class="footer__htmlacademy-image" width="27" height="34">
+              <use xlink:href="#logo-htmlacademy" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/picturefill.js"></script>
+  <script src="js/main.js"></script>
+</body>
 
-                                                                                  </html>
+</html>
