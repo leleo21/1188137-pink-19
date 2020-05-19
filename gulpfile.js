@@ -35,6 +35,7 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
+
 gulp.task("images", function() {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
