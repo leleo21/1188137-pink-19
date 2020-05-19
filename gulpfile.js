@@ -18,8 +18,6 @@ var del = require("del");
 var htmlmin = require("gulp-htmlmin");
 var jsmin = require("gulp-uglify");
 
-
-
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
