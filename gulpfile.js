@@ -19,7 +19,6 @@ var htmlmin = require("gulp-htmlmin");
 var jsmin = require("gulp-uglify");
 
 
-
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
@@ -110,6 +109,7 @@ gulp.task("refresh", function (done) {
   server.reload();
   done();
 });
+
 
 gulp.task("build", gulp.series("del", "copy", "css", "sprite", "html", "js"));
 gulp.task("start", gulp.series("css", "server"));
